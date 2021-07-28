@@ -27,7 +27,7 @@ public class Main {
         verificaPlagio.carregaArquivo("plagio.txt", he);
                 
         boolean flag = verificaPlagio.verifica("dados.txt", he);
-        
+        //he.show();
         System.out.println(flag);
           
 

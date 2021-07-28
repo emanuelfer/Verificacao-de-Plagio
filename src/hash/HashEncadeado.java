@@ -39,11 +39,14 @@ public class HashEncadeado {
     
     public void insert(String key, String value){
         int index = hash(key);
-        while(this.keys[index] != null){
-            if(this.keys[index].equals(key))
-                break;
-            index = (index + 1)%this.buckets;
-        }
+//        while(this.keys[index] != null){
+//            if(this.keys[index].equals(key)){
+//                System.out.println(index);
+//                break;
+//            }
+//            index = (index + 1)%this.buckets;
+//            System.out.println(index);
+//        }
         this.keys[index] = key;
         this.values[index].add(value);
     }

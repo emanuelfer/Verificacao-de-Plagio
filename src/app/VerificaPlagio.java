@@ -30,10 +30,11 @@ public class VerificaPlagio {
                     i++;
                     continue;
                 }
-
+                
                 frase += " " + aux[i+j];
                 j++;
             }
+            
             he.insert(frase, frase);
             frase = "";
         }
@@ -60,7 +61,6 @@ public class VerificaPlagio {
                 j++;
             }
             list = he.findAll(frase);
-            
             if(!list.isEmpty()){
                 for(String string : list){
                     if(frase.equals(string)){
