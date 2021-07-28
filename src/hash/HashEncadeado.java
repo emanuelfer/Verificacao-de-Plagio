@@ -16,7 +16,7 @@ import java.util.List;
 public class HashEncadeado {
     private int buckets;
     private String[] keys;
-    private List<Integer>[] values;
+    private List<String>[] values;
     
     public HashEncadeado(int b){
         this.buckets = b;
@@ -29,12 +29,16 @@ public class HashEncadeado {
     }
     
     public int hash(String x){
-        return (x.hashCode() % this.buckets);
+        int code;
+        if(x.hashCode() < 0)
+            code = -x.hashCode();
+        else
+            code = x.hashCode();
+        return (code % this.buckets);
     }
     
-    public void insert(String key, Integer value){
+    public void insert(String key, String value){
         int index = hash(key);
-        
         while(this.keys[index] != null){
             if(this.keys[index].equals(key))
                 break;
@@ -44,10 +48,10 @@ public class HashEncadeado {
         this.values[index].add(value);
     }
     
-    public List<Integer> findAll(String key){
+    public List<String> findAll(String key){
         int index = hash(key);
-        List<Integer> list = new LinkedList<>();
-        for(Integer i : this.values[index]){
+        List<String> list = new LinkedList<>();
+        for(String i : this.values[index]){
             list.add(i);
         }
         return list;
@@ -56,7 +60,7 @@ public class HashEncadeado {
     public void show(){
         for(int i =0; i< this.buckets; i++){
             System.out.print(i + " ");
-            for(Integer value : this.values[i]){
+            for(String value : this.values[i]){
                 System.out.print(" --> " + value);
             }
             System.out.println("");

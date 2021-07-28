@@ -20,76 +20,43 @@ import java.util.List;
 public class Main {
     
     public static void main(String[] args) {
-//        Integer[] keys = new Integer[10];
-//        String[] values = new String[10];
-//        HashDuplo hashLinear = new HashDuplo(keys, values, 10);   
-//        
-//        hashLinear.insert(10, "Emanuel");
-//        hashLinear.insert(125, "Beatriz");
-//        hashLinear.insert(14, "Serejo");
-//        hashLinear.insert(25, "Lucas");
-//        hashLinear.insert(50, "Pedro");
-//        hashLinear.insert(50, "Victor");
-//        hashLinear.insert(7, "Isabel");
-//        hashLinear.show();    
-
         String origem = new String();
-        origem = "Um dois três três quatro cinco seis sete oito nove dez";
-        String[] aux = origem.split(" ");
-        ArrayList<Integer> pos = new ArrayList<>();//posicoes de d
-        List<Integer> list = null;
-        boolean flag = true;
+        origem = "um dois três quatro cinco seis sete oito nove dez";
+        String aux[] = {"um dois três", "dois três qautro", "três quatro cinco"};
+        List<String> list = null;
+        boolean flag = false;
         HashEncadeado he = new HashEncadeado(7);
         int cont = 0;
 
         //arquivo d
-        he.insert("um", 0);
-        he.insert("Um", 54);
-        he.insert("dois", 55);
-        he.insert("três", 56);
-//        he.insert("", 27);
-//        he.insert("", 22);
-//        he.insert("", 15);
+        he.insert("um dois quatro", "um dois quatro");
+        he.insert("três qutro cinco", "três quatro cinco");
+        he.insert("dois nove", "dois nove");
+        he.insert("quatro dez", "quatro dez");
+        he.show();
+        
 
-        //he.show();
         
         for(String s : aux){
-            if(cont < 3)
-                cont++;
-            else
-                break;
-            //lista das posições
             list = he.findAll(s);
-            System.out.println(s);
-            System.out.println(list.size());
-            if(!list.isEmpty()){
-                for(Integer i : list){
-                   //posições já inseridas
-                   if(!pos.contains(i)){
-                       pos.add(i);
-                       break;
-                   }else{
-                       
-                   }
-                }
-            }else{
+            if(list.isEmpty()){
                 flag = false;
                 break;
-            }
-        }
-        
-        
-        if(!flag){
-            System.out.println("não é plágio");
-        }else{
-            for(int i = 1; i < pos.size(); i++){
-                if(pos.get(i) - pos.get(i-1) != 1){
-                    flag = false;
+            }else{
+                for(String i : list){
+                    if(s.equals(i)){
+                        flag = true;
+                        break;
+                    }
                 }
             }
-            System.out.println("É plágio? " + flag);           
+            
+            if(flag)
+                break;
+             
         }
 
+        System.out.println(flag);
           
 
     }
