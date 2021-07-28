@@ -1,5 +1,6 @@
 package app;
 
+import file.File;
 import hash.HashDuplo;
 import hash.HashEncadeado;
 import hash.HashLinear;
@@ -20,42 +21,13 @@ import java.util.List;
 public class Main {
     
     public static void main(String[] args) {
-        String origem = new String();
-        origem = "um dois três quatro cinco seis sete oito nove dez";
-        String aux[] = {"um dois três", "dois três qautro", "três quatro cinco"};
-        List<String> list = null;
-        boolean flag = false;
-        HashEncadeado he = new HashEncadeado(7);
-        int cont = 0;
-
-        //arquivo d
-        he.insert("um dois quatro", "um dois quatro");
-        he.insert("três qutro cinco", "três quatro cinco");
-        he.insert("dois nove", "dois nove");
-        he.insert("quatro dez", "quatro dez");
-        he.show();
+        HashEncadeado he = new HashEncadeado(1000);
+        VerificaPlagio verificaPlagio = new VerificaPlagio();
         
-
+        verificaPlagio.carregaArquivo("plagio.txt", he);
+                
+        boolean flag = verificaPlagio.verifica("dados.txt", he);
         
-        for(String s : aux){
-            list = he.findAll(s);
-            if(list.isEmpty()){
-                flag = false;
-                break;
-            }else{
-                for(String i : list){
-                    if(s.equals(i)){
-                        flag = true;
-                        break;
-                    }
-                }
-            }
-            
-            if(flag)
-                break;
-             
-        }
-
         System.out.println(flag);
           
 
