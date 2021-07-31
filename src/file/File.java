@@ -14,7 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
-import sun.misc.IOUtils;
+//import sun.misc.IOUtils;
 
 /**
  *
@@ -28,20 +28,20 @@ public class File {
         String string = "";
         String[] aux = null;
         try{
-            texto = Files.readAllLines(path);
-
+            texto = Files.readAllLines(path);   
             for(String s : texto){
+                
+
                 string += " " + s;
             }
             
             string = string.replace(".", "");
             string = string.replace(",", "");
-
+            
             aux = string.split(" ");
         }catch(IOException ioe){
             System.out.println(ioe.getMessage());
         }
-
         return aux;
     }
 }
