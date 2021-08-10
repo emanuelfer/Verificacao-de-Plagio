@@ -18,21 +18,38 @@ import java.util.List;
  *
  * @author emanu
  */
+
+import java.util.Random;
 public class Main {
     
     public static void main(String[] args) {
-        HashEncadeado he = new HashEncadeado(1000);
+        /*
+        Random randomizer = new Random();
+        //--------------- 1
+        
+        HashEncadeado hash1 = new HashEncadeado(10);
+        
+        for (int i=0; i<50; i++){
+            int key = randomizer.nextInt(9);
+            int value = randomizer.nextInt();
+            hash1.insert(key, value);
+        }*/
+        
+       
+        HashEncadeado he = new HashEncadeado(100000); // Fórmula para decidir um tamanho?
         VerificaPlagio verificaPlagio = new VerificaPlagio();
         
-        verificaPlagio.carregaArquivo("plagio.txt", he);
+        verificaPlagio.carregaArquivo("plagio.txt", he, 12);
                 
-        boolean flag = verificaPlagio.verifica("dados.txt", he);
+        boolean flag = verificaPlagio.verifica("dados.txt", he, 12); //Maiúsculas e minusculas // Acento
         //he.show();
+
         if(flag){
             System.out.println("É plágio");
         }else{
             System.out.println("Não é plagio");
         }
+        
           
 
     }

@@ -17,58 +17,68 @@ import java.util.List;
  */
 public class VerificaPlagio {
     
-    public void carregaArquivo(String file, HashEncadeado he){
+     // n == 2
+    public void carregaArquivo(String file, HashEncadeado he, int m){
         String[] aux = File.read(file);
-
-                        int j;
+        int j;
         String frase = "";
         boolean flag = false;
-        for(int i = 0; i < aux.length-10; i++){
-            j=0;
-            while(j < 10){
-                if(aux[i+j].isEmpty()){
-                    i++;
-                    continue;
+            for(int i = 0; i <= aux.length-m; i++){
+                j=0;
+                while(j < m){
+                    if(aux[i+j].isEmpty()){
+                        i++;
+                        continue;
+                    }
+
+                    frase += " " + aux[i+j];
+                    j++;
                 }
-                
-                frase += " " + aux[i+j];
-                j++;
+                frase.toLowerCase();
+                he.insert(frase, frase);
+                System.out.println(frase);
+                frase = "";
             }
-            
-            he.insert(frase, frase);
-            frase = "";
-        }
+        
         
     }
     
-    public boolean verifica(String file, HashEncadeado he){
+    public boolean verifica(String file, HashEncadeado he, int m){
         String[] texto = File.read(file);
         List<String> list;
+        int testeJuncoes;
         int j = 0;
         String frase = "";
-        boolean flag = true;
-        
-        for(int i = 0; i < texto.length-10; i++){
-            j=0;
-            frase = "";
-            while(j < 10){
-                if(texto[i+j].isEmpty()){
-                    i++;
-                    continue;
-                }
+        if (texto != null){
 
-                frase += " " + texto[i+j];
-                j++;
-            }
-            list = he.findAll(frase);
-            if(!list.isEmpty()){
-                for(String string : list){
-                    if(frase.equals(string)){
-                        return true;
+            for(int i = 0; i <= texto.length-m; i++){
+                j=0;
+                testeJuncoes=0;
+                frase = "";
+                while(j < m){
+                    if(texto[i+j].isEmpty()){
+                        i++;
+                        continue;
+                    }
+
+                    frase += " " + texto[i+j];
+                    j++;
+                }
+                System.out.println(frase);
+                frase.toLowerCase();
+                list = he.findAll(frase);
+                if(!list.isEmpty()){
+                    for(String string : list){
+                        testeJuncoes++;
+                        if(frase.equals(string)){
+                            System.out.println("Quant: "+testeJuncoes);
+                            System.out.println("Chave: "+string);
+                            return true;
+                        }
                     }
                 }
+
             }
-              
         }
         
         return false;

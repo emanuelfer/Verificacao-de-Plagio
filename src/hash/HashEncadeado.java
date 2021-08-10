@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author emanu
  */
-public class HashEncadeado {
+public class HashEncadeado  {
     private int buckets;
     private String[] keys;
     private List<String>[] values;
