@@ -80,6 +80,6 @@ public class VerificaPlagio {
     }
     
     public String removerAcentos(String str) {
-    return Normalizer.normalize(str, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
-}
+        return Normalizer.normalize(str, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
+    }
 }

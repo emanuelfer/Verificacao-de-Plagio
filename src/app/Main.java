@@ -28,7 +28,11 @@ public class Main {
                 
         boolean flag = verificaPlagio.verifica("dados.txt", he);
         //he.show();
-        System.out.println(flag);
+        if(flag){
+            System.out.println("É plágio");
+        }else{
+            System.out.println("Não é plagio");
+        }
           
 
     }
