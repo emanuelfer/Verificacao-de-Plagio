@@ -20,6 +20,7 @@ import java.util.List;
  */
 
 import java.util.Random;
+import rbtree.RedBlackTree;
 public class Main {
     
     public static void main(String[] args) {
@@ -37,11 +38,25 @@ public class Main {
         
        
         HashEncadeado he = new HashEncadeado(100000); // Fórmula para decidir um tamanho?
+        RedBlackTree rbTree = new RedBlackTree();
         VerificaPlagio verificaPlagio = new VerificaPlagio();
         
-        verificaPlagio.carregaArquivo("plagio.txt", he, 12);
+        verificaPlagio.carregaArquivoHash("plagio.txt", he, 12);
                 
-        boolean flag = verificaPlagio.verifica("dados.txt", he, 12); //Maiúsculas e minusculas // Acento
+//        boolean flag = verificaPlagio.verifcaByHash("dados.txt", he, 12); //Maiúsculas e minusculas // Acento;
+//        //he.show();
+//
+//        if(flag){
+//            System.out.println("É plágio");
+//        }else{
+//            System.out.println("Não é plagio");
+//        }
+
+        
+        verificaPlagio.carregaArquivoRBTree("plagio.txt", rbTree, 10);
+        //rbTree.show();
+        
+        boolean flag = verificaPlagio.verificaByRBTree("dados.txt", rbTree, 10); //Maiúsculas e minusculas // Acento;
         //he.show();
 
         if(flag){
@@ -49,6 +64,7 @@ public class Main {
         }else{
             System.out.println("Não é plagio");
         }
+
         
           
 
