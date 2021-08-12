@@ -10,6 +10,7 @@ import hash.HashEncadeado;
 import java.text.Normalizer;
 import java.util.LinkedList;
 import java.util.List;
+import rbtree.RedBlackTree;
 
 /**
  *
@@ -18,44 +19,63 @@ import java.util.List;
 public class VerificaPlagio {
     
      // n == 2
-    public void carregaArquivo(String file, HashEncadeado he){
+    public void carregaArquivoHash(String file, HashEncadeado he, int m){
         String[] aux = File.read(file);
         int j;
         String frase = "";
-        boolean flag = false;
-            for(int i = 0; i < aux.length-2; i++){
-                j=0;
-                while(j < 2){
-                    if(aux[i+j].isEmpty()){
-                        i++;
-                        continue;
-                    }
-
-                    frase += " " + aux[i+j];
-                    j++;
+        
+        for(int i = 0; i <= aux.length-m; i++){
+            j=0;
+            while(j < m){
+                if(aux[i+j].isEmpty()){
+                    i++;
+                    continue;
                 }
-                frase.toLowerCase();
-                he.insert(frase, frase);
-                frase = "";
+
+                frase += " " + aux[i+j];
+                j++;
             }
-        
-        
+            frase.toLowerCase();
+            he.insert(frase, frase);
+            frase = "";
+        }       
     }
     
-    public boolean verifica(String file, HashEncadeado he){
+    public void carregaArquivoRBTree(String file, RedBlackTree rbTree, int m){
+        String[] aux = File.read(file);
+        int j;
+        String frase = "";
+        
+        for(int i = 0; i <= aux.length-m; i++){
+            j=0;
+            while(j < m){
+                if(aux[i+j].isEmpty()){
+                    i++;
+                    continue;
+                }
+
+                frase += " " + aux[i+j];
+                j++;
+            }
+            frase.toLowerCase();
+            rbTree.insert(frase);
+            frase = "";
+        }   
+    }
+    
+    public boolean verifcaByHash(String file, HashEncadeado he, int m){
         String[] texto = File.read(file);
         List<String> list;
         int testeJuncoes;
         int j = 0;
         String frase = "";
         if (texto != null){
-            boolean flag = true;
 
-            for(int i = 0; i < texto.length-2; i++){
+            for(int i = 0; i <= texto.length-m; i++){
                 j=0;
                 testeJuncoes=0;
                 frase = "";
-                while(j < 2){
+                while(j < m){
                     if(texto[i+j].isEmpty()){
                         i++;
                         continue;
@@ -64,6 +84,7 @@ public class VerificaPlagio {
                     frase += " " + texto[i+j];
                     j++;
                 }
+                System.out.println(frase);
                 frase.toLowerCase();
                 list = he.findAll(frase);
                 if(!list.isEmpty()){
@@ -83,12 +104,44 @@ public class VerificaPlagio {
         return false;
     }
     
+    public boolean verificaByRBTree(String file, RedBlackTree rbTree, int m){
+        String[] texto = File.read(file);
+        List<String> list;
+        int testeJuncoes;
+        int j = 0;
+        String frase = "";
+        if (texto != null){
+
+            for(int i = 0; i <= texto.length-m; i++){
+                j=0;
+                testeJuncoes=0;
+                frase = "";
+                while(j < m){
+                    if(texto[i+j].isEmpty()){
+                        i++;
+                        continue;
+                    }
+
+                    frase += " " + texto[i+j];
+                    j++;
+                }
+                if(rbTree.search(frase)){
+                    System.out.println(frase);
+                    return true;
+
+                }
+            }
+        }
+        
+        return false;
+    }
+    
     public boolean isAlphaNumeric(String s){
         String pattern= "^[a-zA-Z0-9]*$";
         return s.matches(pattern);
     }
     
     public String removerAcentos(String str) {
-    return Normalizer.normalize(str, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
-}
+        return Normalizer.normalize(str, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
+    }
 }
