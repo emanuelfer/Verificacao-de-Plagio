@@ -11,12 +11,14 @@ import java.text.Normalizer;
 import java.util.LinkedList;
 import java.util.List;
 import rbtree.RedBlackTree;
+import avltree.AVL_Functions;
 
 /**
  *
  * @author emanu
  */
-public class VerificaPlagio {
+public class VerificaPlagio  {
+    
     
      // n == 2
     public void carregaArquivoHash(String file, HashEncadeado he, int m){
@@ -24,7 +26,7 @@ public class VerificaPlagio {
         int j;
         String frase = "";
         
-        for(int i = 0; i <= aux.length-m; i++){
+        for(int i = 0; i <= (aux.length-m); i++){
             j=0;
             while(j < m){
                 if(aux[i+j].isEmpty()){
@@ -41,7 +43,7 @@ public class VerificaPlagio {
         }       
     }
     
-    public void carregaArquivoRBTree(String file, RedBlackTree rbTree, int m){
+    public void carregaArquivoTree(String file, RedBlackTree rbTree, AVL_Functions avlTree, int m, int flag){
         String[] aux = File.read(file);
         int j;
         String frase = "";
@@ -58,7 +60,11 @@ public class VerificaPlagio {
                 j++;
             }
             frase.toLowerCase();
-            rbTree.insert(frase);
+            if (flag == 0 && avlTree != null){
+                avlTree.insertValue(frase);
+            }else if (flag == 1 && rbTree != null){
+                rbTree.insert(frase);
+            }
             frase = "";
         }   
     }
@@ -91,8 +97,8 @@ public class VerificaPlagio {
                     for(String string : list){
                         testeJuncoes++;
                         if(frase.equals(string)){
-                            System.out.println("Quant: "+testeJuncoes);
-                            System.out.println("Chave: "+string);
+                            //System.out.println("Quant: "+testeJuncoes);
+                            //System.out.println("Chave: "+string);
                             return true;
                         }
                     }
@@ -104,7 +110,7 @@ public class VerificaPlagio {
         return false;
     }
     
-    public boolean verificaByRBTree(String file, RedBlackTree rbTree, int m){
+    public boolean verificaByTree(String file, RedBlackTree rbTree, AVL_Functions avlTree, int m, int flag){
         String[] texto = File.read(file);
         List<String> list;
         int testeJuncoes;
@@ -125,10 +131,17 @@ public class VerificaPlagio {
                     frase += " " + texto[i+j];
                     j++;
                 }
-                if(rbTree.search(frase)){
-                    System.out.println(frase);
-                    return true;
+                if (flag ==  0 && avlTree != null){
+                    if (avlTree.search(frase)){
+                        //System.out.println(frase);
+                        return true;
+                    }
+                }else if (flag == 1 && rbTree != null){
+                    if(rbTree.search(frase)){
+                        //System.out.println(frase);
+                        return true;
 
+                    }
                 }
             }
         }

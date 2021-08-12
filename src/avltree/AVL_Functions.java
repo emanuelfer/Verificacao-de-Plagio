@@ -32,29 +32,29 @@ public class AVL_Functions {
             this.raiz = noInsere;
         }else{
             //Convertendo a string em valor ASCII
-            int noComparaASCII = 0;
+            /*int noComparaASCII = 0;
             int noInsereASCII = 0;
             for (int i=0; i<noCompara.getKey().length(); i++){
                 noComparaASCII += noComparaASCII+noCompara.getKey().charAt(i);
             }
             for (int j=0; j<noInsere.getKey().length(); j++){
                 noInsereASCII += noInsereASCII+noInsere.getKey().charAt(j);
-            }
+            }*/
             //Fim cast
-            if (noInsereASCII < noComparaASCII){ //Inserido a esquerda
+            if (noInsere.getKey().compareTo(noCompara.getKey()) < 0){ //Inserido a esquerda
                 if (noCompara.getEsquerda() == null){
                     noCompara.setEsquerda(noInsere);
                     noInsere.setPai(noCompara);
-                    verificaBalance(noCompara);
+                    verificarBalanceamento(noCompara);
                 }else{
                     insertAVL(noCompara.getEsquerda(), noInsere);
                 }
                 
-            }else if (noInsereASCII > noComparaASCII){ //Mesmo processo só que direita
+            }else if (noInsere.getKey().compareTo(noCompara.getKey()) > 0){ //Mesmo processo só que direita
                 if (noCompara.getDireita() == null){
                     noCompara.setDireita(noInsere);
                     noInsere.setPai(noCompara);
-                    verificaBalance(noCompara);
+                    verificarBalanceamento(noCompara);
                 }else{
                     insertAVL(noCompara.getDireita(), noInsere);
                 }
@@ -139,7 +139,7 @@ public class AVL_Functions {
         return rotacaoEsquerda(no);
     }
     
-    public void verificaBalance(AVL_Node no){
+    /*public void verificaBalance(AVL_Node no){
         setBalance(no);
         int balace = no.getBalance();
         int alturaEsquerdaEsquerda = CalculaAltura(no.getEsquerda().getEsquerda());
@@ -166,7 +166,37 @@ public class AVL_Functions {
         }else{
             this.raiz = no;
         }
-    }
+    }*/
+    
+    public void verificarBalanceamento(AVL_Node atual) {
+		setBalance(atual);
+		int balanceamento = atual.getBalance();
+
+		if (balanceamento == -2) {
+
+			if (CalculaAltura(atual.getEsquerda().getEsquerda()) >= CalculaAltura(atual.getEsquerda().getDireita())) {
+				atual = rotacaoDireita(atual);
+
+			} else {
+				atual = duplaRotacaoEsquerdaDireita(atual);
+			}
+
+		} else if (balanceamento == 2) {
+
+			if (CalculaAltura(atual.getDireita().getDireita()) >= CalculaAltura(atual.getDireita().getEsquerda())) {
+				atual = rotacaoEsquerda(atual);
+
+			} else {
+				atual = duplaRotacaoDireitaEsquerda(atual);
+			}
+		}
+
+		if (atual.getPai() != null) {
+			verificarBalanceamento(atual.getPai());
+		} else {
+			this.raiz = atual;
+		}
+	}
     
     
     // << -- TESTAR -- >>
@@ -182,5 +212,31 @@ public class AVL_Functions {
         inorder(no.getEsquerda(), lista);
         lista.add(no);
         inorder(no.getDireita(), lista);
+    }
+    
+    public boolean search(String data){
+        AVL_Node temp = raiz;
+        
+        while(temp != null){
+            if(data.compareTo(temp.getKey()) < 0){
+                if(temp.getEsquerda() == null)
+                    break;
+                else
+                    temp = temp.getEsquerda();
+            }else if(data.equals(temp.getKey())){
+                System.out.println(data + " - " + temp.getKey());
+                break;
+            }else{
+                if(temp.getDireita() == null)
+                    break;
+                else
+                    temp = temp.getDireita();
+            }
+        }
+        
+
+        if(data.equals(temp.getKey()))
+            return true;    
+        return false;
     }
 }

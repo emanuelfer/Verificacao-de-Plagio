@@ -21,6 +21,7 @@ import java.util.List;
 
 import java.util.Random;
 import rbtree.RedBlackTree;
+import avltree.AVL_Functions;
 public class Main {
     
     public static void main(String[] args) {
@@ -39,9 +40,10 @@ public class Main {
        
         HashEncadeado he = new HashEncadeado(100000); // Fórmula para decidir um tamanho?
         RedBlackTree rbTree = new RedBlackTree();
+        AVL_Functions avlTree = new AVL_Functions();
         VerificaPlagio verificaPlagio = new VerificaPlagio();
         
-        verificaPlagio.carregaArquivoHash("plagio.txt", he, 12);
+        verificaPlagio.carregaArquivoHash("plagio.txt", he, 5);
                 
 //        boolean flag = verificaPlagio.verifcaByHash("dados.txt", he, 12); //Maiúsculas e minusculas // Acento;
 //        //he.show();
@@ -53,16 +55,30 @@ public class Main {
 //        }
 
         
-        verificaPlagio.carregaArquivoRBTree("plagio.txt", rbTree, 10);
+        verificaPlagio.carregaArquivoTree("plagio.txt", rbTree,null, 5,1);
+        verificaPlagio.carregaArquivoTree("plagio.txt", null, avlTree, 5, 0);
         //rbTree.show();
         
-        boolean flag = verificaPlagio.verificaByRBTree("dados.txt", rbTree, 10); //Maiúsculas e minusculas // Acento;
+        boolean flag = verificaPlagio.verificaByTree("dados.txt", rbTree,null, 5,1); //Maiúsculas e minusculas // Acento;
+        boolean flagAVL = verificaPlagio.verificaByTree("dados.txt", null,avlTree, 5, 0);
+        boolean flagHash = verificaPlagio.verifcaByHash("dados.txt", he, 5);
         //he.show();
 
-        if(flag){
-            System.out.println("É plágio");
+        if (flagHash){
+            System.out.println("É plágio | Usando: Hash");
         }else{
-            System.out.println("Não é plagio");
+            System.out.println("Não é plágio | Usando: Hash");
+        }
+        if(flag){
+            System.out.println("É plágio | Usando: RB");
+        }else{
+            System.out.println("Não é plagio | Usando RB");
+        }
+        
+        if (flagAVL){
+            System.out.println("É plágio | Usando: AVL");
+        }else{
+            System.out.println("Não é plágio | Usando: AVL");
         }
 
         
