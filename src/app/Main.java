@@ -38,7 +38,17 @@ public class Main {
         }*/
         
        
-        HashEncadeado he = new HashEncadeado(100000); // Fórmula para decidir um tamanho?
+        HashEncadeado he = new HashEncadeado(10); // Fórmula para decidir um tamanho?
+        he.insert("Pedro", "1");
+        he.insert("Pedro", "2");
+        he.insert("Pedro", "1"); // Repetido n pode
+        he.insert("Pedro", "3");
+        he.insert("Pedro", "2"); //Repetido n pode
+        System.out.println(he.findAll("Pedro"));
+        //he.show();
+        
+        
+        /*
         RedBlackTree rbTree = new RedBlackTree();
         AVL_Functions avlTree = new AVL_Functions();
         VerificaPlagio verificaPlagio = new VerificaPlagio();
@@ -82,7 +92,7 @@ public class Main {
         }
 
         
-          
+          */
 
     }
 }

@@ -6,25 +6,30 @@
 package hash;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.LinkedHashSet;
 
 /**
  *
  * @author emanu
  */
-public class HashEncadeado  {
+public class HashEncadeado{
     private int buckets;
     private String[] keys;
-    private List<String>[] values;
+    private List<LinkedHashSet>[] values;
+    
     
     public HashEncadeado(int b){
         this.buckets = b;
         this.keys = new String[this.buckets];
-        this.values = new LinkedList[this.buckets];
+        this.values = new LinkedList[this.buckets];                
         for(int i = 0; i< this.buckets; i++){
             this.values[i] = new LinkedList<>();
+            this.values[i].add(new LinkedHashSet<String>());
         }
+        
         
     }
     
@@ -47,25 +52,38 @@ public class HashEncadeado  {
 //            index = (index + 1)%this.buckets;
 //            System.out.println(index);
 //        }
+ 
         this.keys[index] = key;
-        this.values[index].add(value);
+        //this.values[index].add(value);
+        this.values[index].get(0).add(value);
+        
     }
     
     public List<String> findAll(String key){
         int index = hash(key);
         List<String> list = new LinkedList<>();
-        for(String i : this.values[index]){
-            list.add(i);
+        for(LinkedHashSet link : this.values[index]){
+            Iterator it = link.iterator();
+            while (it.hasNext()){
+                list.add((String)it.next());
+            }
         }
+        
         return list;
     }
     
     public void show(){
         for(int i =0; i< this.buckets; i++){
             System.out.print(i + " ");
-            for(String value : this.values[i]){
-                System.out.print(" --> " + value);
+            
+            for(LinkedHashSet link : this.values[i]){
+                Iterator it = link.iterator();
+                while (it.hasNext()){
+                    System.out.print(" --> " + it.next());
+                }
+                //System.out.print(" --> " + value);
             }
+            
             System.out.println("");
         }
     }
