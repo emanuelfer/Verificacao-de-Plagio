@@ -12,6 +12,7 @@ import java.util.LinkedList;
 import java.util.List;
 import rbtree.RedBlackTree;
 import avltree.AVL_Functions;
+import hash.HashEncadeado1;
 
 /**
  *
@@ -21,7 +22,7 @@ public class VerificaPlagio  {
     
     
      // n == 2
-    public void carregaArquivoHash(String file, HashEncadeado he, int m){
+    public void carregaArquivoHash(String file, HashEncadeado1 he, int m){
         String[] aux = File.read(file);
         int j;
         String frase = "";
@@ -69,7 +70,7 @@ public class VerificaPlagio  {
         }   
     }
     
-    public boolean verifcaByHash(String file, HashEncadeado he, int m){
+    public boolean verifcaByHash(String file, HashEncadeado1 he, int m){
         String[] texto = File.read(file);
         List<String> list;
         int testeJuncoes;

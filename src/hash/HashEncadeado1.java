@@ -6,6 +6,7 @@
 package hash;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -15,25 +16,24 @@ import java.util.LinkedHashSet;
  *
  * @author emanu
  */
-public class HashEncadeado{
+public class HashEncadeado1 <T, T1>{
     private int buckets;
-    private String[] keys;
-    private List<LinkedHashSet>[] values;
+    private T[] keys;
+    private HashDuplo[] values;
     
     
-    public HashEncadeado(int b){
+    public <T1> HashEncadeado1(int b, T[] keys, T1[] values){
         this.buckets = b;
-        this.keys = new String[this.buckets];
-        this.values = new LinkedList[this.buckets];                
+        this.keys = keys;
+        this.values = new HashDuplo[this.buckets];
         for(int i = 0; i< this.buckets; i++){
-            this.values[i] = new LinkedList<>();
-            this.values[i].add(new LinkedHashSet<String>());
+            this.values[i] = new HashDuplo<>(Arrays.copyOf(values, this.buckets));
         }
         
         
     }
     
-    public int hash(String x){
+    public int hash(T x){
         int code;
         if(x.hashCode() < 0)
             code = -x.hashCode();
@@ -42,7 +42,7 @@ public class HashEncadeado{
         return (code % this.buckets);
     }
     
-    public void insert(String key, String value){
+    public void insert(T key, T value){
         int index = hash(key);
         while(this.keys[index] != null){
             if(this.keys[index].equals(key)){
@@ -50,36 +50,30 @@ public class HashEncadeado{
             }
             index = (index + 1)%this.buckets;
         }
- 
         this.keys[index] = key;
         //this.values[index].add(value);
-        this.values[index].get(0).add(value);
-        
+        this.values[index].insert(value);
+        //this.show();
     }
     
-    public List<String> findAll(String key){
+    public List<T1> findAll(T key){
         int index = hash(key);
-        List<String> list = new LinkedList<>();
-        for(LinkedHashSet link : this.values[index]){
-            Iterator it = link.iterator();
-            while (it.hasNext()){
-                list.add((String)it.next());
-            }
+        List<T1> retorno = new LinkedList<>();
+        List<T1> list = this.values[index].getAll();
+        for(T1 s : list){
+            retorno.add(s);
         }
         
-        return list;
+        return retorno;
     }
     
     public void show(){
         for(int i =0; i< this.buckets; i++){
             System.out.print(i + " ");
-            
-            for(LinkedHashSet link : this.values[i]){
-                Iterator it = link.iterator();
-                while (it.hasNext()){
-                    System.out.print(" --> " + it.next());
-                }
-                //System.out.print(" --> " + value);
+            List<T1> list = this.values[i].getAll();
+            for(T1 s : list){
+                System.out.print(" --> " + s);
+                 //System.out.print(" --> " + value);
             }
             
             System.out.println("");

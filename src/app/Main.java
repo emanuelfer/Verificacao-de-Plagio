@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Random;
 import rbtree.RedBlackTree;
 import avltree.AVL_Functions;
+import hash.HashEncadeado1;
 public class Main {
     
     public static void main(String[] args) {
@@ -38,22 +39,22 @@ public class Main {
         }*/
         
        
-        HashEncadeado he = new HashEncadeado(10); // Fórmula para decidir um tamanho?
-        he.insert("Pedro", "1");
-        he.insert("Pedro", "2");
-        he.insert("Pedro", "1"); // Repetido n pode
-        he.insert("Pedro", "3");
-        he.insert("Pedro", "2"); //Repetido n pode
-        System.out.println(he.findAll("Pedro"));
-        //he.show();
+          HashEncadeado1 he = new HashEncadeado1<String, String>(10000, new String[10000], new String[10000]); // Fórmula para decidir um tamanho?
+//        he.insert(10, "1");
+//        he.insert(10, "2");
+//        he.insert(10, "1"); // Repetido n pode
+//        he.insert(10, "3");
+//        he.insert(10, "2"); //Repetido n pode
+//        System.out.println(he.findAll(10));
+//        he.show();
         
         
-        /*
+        
         RedBlackTree rbTree = new RedBlackTree();
         AVL_Functions avlTree = new AVL_Functions();
         VerificaPlagio verificaPlagio = new VerificaPlagio();
         
-        verificaPlagio.carregaArquivoHash("plagio.txt", he, 5);
+        verificaPlagio.carregaArquivoHash("plagio.txt", he, 10);
                 
 //        boolean flag = verificaPlagio.verifcaByHash("dados.txt", he, 12); //Maiúsculas e minusculas // Acento;
 //        //he.show();
@@ -65,13 +66,13 @@ public class Main {
 //        }
 
         
-        verificaPlagio.carregaArquivoTree("plagio.txt", rbTree,null, 5,1);
-        verificaPlagio.carregaArquivoTree("plagio.txt", null, avlTree, 5, 0);
+        verificaPlagio.carregaArquivoTree("plagio.txt", rbTree,null, 10,1);
+        verificaPlagio.carregaArquivoTree("plagio.txt", null, avlTree, 10, 0);
         //rbTree.show();
         
-        boolean flag = verificaPlagio.verificaByTree("dados.txt", rbTree,null, 5,1); //Maiúsculas e minusculas // Acento;
-        boolean flagAVL = verificaPlagio.verificaByTree("dados.txt", null,avlTree, 5, 0);
-        boolean flagHash = verificaPlagio.verifcaByHash("dados.txt", he, 5);
+        boolean flag = verificaPlagio.verificaByTree("dados.txt", rbTree,null, 10,1); //Maiúsculas e minusculas // Acento;
+        boolean flagAVL = verificaPlagio.verificaByTree("dados.txt", null,avlTree, 10, 0);
+        boolean flagHash = verificaPlagio.verifcaByHash("dados.txt", he, 10);
         //he.show();
 
         if (flagHash){
@@ -92,7 +93,7 @@ public class Main {
         }
 
         
-          */
+         
 
     }
 }
