@@ -87,11 +87,14 @@ public class HashDuplo <T>{
 //    }
 //    
     public List<T> getAll(){
+        int cont = 0;
         List<T> list = new LinkedList<>();
         for(int i = 0; i< this.keys.length ; i++){
+            cont++;
             if(this.keys[i] != null)
                 list.add(this.keys[i]);
         }
+        //System.out.println("O("+cont+")");
         return list;
     }
     

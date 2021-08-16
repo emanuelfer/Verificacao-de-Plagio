@@ -66,7 +66,7 @@ public class HashEncadeado1 <T, T1>{
         return retorno;
     }
     
-    public void show(){
+   /* public void show(){
         for(int i =0; i< this.buckets; i++){
             System.out.print(i + " ");
             List<T1> list = this.values[i].getAll();
@@ -77,7 +77,7 @@ public class HashEncadeado1 <T, T1>{
             
             System.out.println("");
         }
-    }
+    }*/
     
     
 }
