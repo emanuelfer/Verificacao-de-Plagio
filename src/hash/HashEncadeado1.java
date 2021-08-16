@@ -30,7 +30,6 @@ public class HashEncadeado1 <T, T1>{
             this.values[i] = new HashDuplo<>(Arrays.copyOf(values, this.buckets));
         }
         
-        
     }
     
     public int hash(T x){
