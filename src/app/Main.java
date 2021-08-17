@@ -58,6 +58,7 @@ public class Main {
                     Long timeBefore = System.currentTimeMillis();
                     for (i = 0; i < tamHash / 2; i++) { // Se tem 1000 posições do hash, 500 elementos serão inseridos.
                         //hashIntString.insert(i, geraString(5));
+                        System.out.println("oi");
                         hashIntDouble.insert(i, gerador.nextDouble());
                         //hashIntObject.insert(i, pessoa.generateRandomPessoa());
                     }
