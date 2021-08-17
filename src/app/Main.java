@@ -79,6 +79,7 @@ public class Main {
                 case 2:
                     int escSegunda=1;
                     VerificaPlagio verificador = new VerificaPlagio(); //Objeto responsável pela chamada de métodos de verificação e leitura de arquivo
+                    Long antesCarregamento, depoisCarregamento, antesVerificacao, depoisVerificacao; 
                     while (escSegunda > 0){
                         System.out.println("1 - Por Hash\n2- AVL\n3- RB");
                         escSegunda = leInteiro();
@@ -87,33 +88,51 @@ public class Main {
                         switch(escSegunda){
                             case 1:
                                 HashEncadeado1 hashPlagio = new HashEncadeado1(10000, new String[10000], new String[10000]); //Criação do Hash                                
+                                antesCarregamento = System.currentTimeMillis();
                                 verificador.carregaArquivoHash("plagio.txt", hashPlagio, n); //Hash vai ser preenchido com cadeias de N palavras;
+                                depoisCarregamento = System.currentTimeMillis();
+                                antesVerificacao = System.currentTimeMillis();
                                 boolean ehPlagioHash = verificador.verifcaByHash("dados.txt", hashPlagio, n); //Verifica se há plágio
+                                depoisVerificacao = System.currentTimeMillis();
                                 if (ehPlagioHash){
                                     System.out.println("Arquivo plagiado");
                                 }else{
                                     System.out.println("Não há plágio");
                                 }
+                                System.out.println("Tempo gasto para carregar arquivo na estrutura: "+(depoisCarregamento-antesCarregamento));
+                                System.out.println("Tempo gasto para verificar plágio usando a estrutura: "+(depoisVerificacao-antesVerificacao));
                                 break;
                             case 2:
                                 AVL_Functions avlTree = new AVL_Functions();
-                                verificador.carregaArquivoTree("plagio.txt", null, avlTree, n, 0); //Carrega arquivo na Árvore.
-                                boolean flagAVL = verificador.verificaByTree("dados.txt", null,avlTree, n, 0);
+                                antesCarregamento = System.currentTimeMillis();
+                                verificador.carregaArquivoTree("Arquivos para verificar/TemPlagio2.txt", null, avlTree, n, 0); //Carrega arquivo na Árvore.
+                                depoisCarregamento = System.currentTimeMillis();
+                                antesVerificacao = System.currentTimeMillis();
+                                boolean flagAVL = verificador.verificaByTree("Base de Documentos/dados3.txt", null,avlTree, n, 0);
+                                depoisVerificacao = System.currentTimeMillis();
                                 if (flagAVL){
                                     System.out.println("Arquivo plagiado");
                                 }else{
                                     System.out.println("Não há plágio");
                                 }
+                                System.out.println("Tempo gasto para carregar arquivo na estrutura: "+(depoisCarregamento-antesCarregamento));
+                                System.out.println("Tempo gasto para verificar plágio usando a estrutura: "+(depoisVerificacao-antesVerificacao));
                                 break;
                             case 3:
                                 RedBlackTree rbTree = new RedBlackTree();
+                                antesCarregamento = System.currentTimeMillis();
                                 verificador.carregaArquivoTree("plagio.txt", rbTree,null, n,1); //Carrega arquivo na Árvore.
+                                depoisCarregamento = System.currentTimeMillis();
+                                antesVerificacao = System.currentTimeMillis();
                                 boolean flag = verificador.verificaByTree("dados.txt", rbTree,null, n,1);
+                                depoisVerificacao = System.currentTimeMillis();
                                 if (flag){
                                     System.out.println("Arquivo plagiado");
                                 }else{
                                     System.out.println("Não há plágio");
                                 }
+                                System.out.println("Tempo gasto para carregar arquivo na estrutura: "+(depoisCarregamento-antesCarregamento));
+                                System.out.println("Tempo gasto para verificar plágio usando a estrutura: "+(depoisVerificacao-antesVerificacao));
                                 break;
                             default:
                                 break;
@@ -127,6 +146,14 @@ public class Main {
 
     }
 
+    /*
+       * Função: geraString(int n)
+       * Descrição: Através de concatenação gera String aleatórias de tamanho N
+       * Utilização: main(String []args)
+       * Parâmetros:            
+            n: Tamanho do String que será retornada.
+       * Retorno: String de tamanho N.
+    */
     public static String geraString(int n) {
         StringBuilder sb = new StringBuilder(n);
 

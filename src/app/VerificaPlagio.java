@@ -13,6 +13,8 @@ import java.util.List;
 import rbtree.RedBlackTree;
 import avltree.AVL_Functions;
 import hash.HashEncadeado1;
+import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 
 /**
  *
@@ -23,7 +25,8 @@ public class VerificaPlagio  {
     
      // n == 2
     public void carregaArquivoHash(String file, HashEncadeado1 he, int m){
-        String[] aux = File.read(file);
+        //String[] aux = File.read(file);
+        String[] aux = File.leBuffered(file);
         int j;
         String frase = "";
         
@@ -45,7 +48,8 @@ public class VerificaPlagio  {
     }
     
     public void carregaArquivoTree(String file, RedBlackTree rbTree, AVL_Functions avlTree, int m, int flag){
-        String[] aux = File.read(file);
+        //String[] aux = File.read(file);
+        String[] aux = File.leBuffered(file);
         int j;
         String frase = "";
         
@@ -71,7 +75,8 @@ public class VerificaPlagio  {
     }
     
     public boolean verifcaByHash(String file, HashEncadeado1 he, int m){
-        String[] texto = File.read(file);
+        //String[] texto = File.read(file);
+        String[] texto = File.leBuffered(file);
         List<String> list;
         int testeJuncoes;
         int j = 0;
@@ -112,7 +117,8 @@ public class VerificaPlagio  {
     }
     
     public boolean verificaByTree(String file, RedBlackTree rbTree, AVL_Functions avlTree, int m, int flag){
-        String[] texto = File.read(file);
+        //String[] texto = File.read(file);
+        String[] texto = File.leBuffered(file);
         List<String> list;
         int testeJuncoes;
         int j = 0;
