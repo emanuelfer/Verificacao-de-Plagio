@@ -66,7 +66,7 @@ public class File {
         return aux;
     }
     
-    public static String[] read(String file){
+    /*public static String[] read(String file){
         List<String> texto = null;
         Path path = Paths.get(file);
         String string = "";
@@ -87,5 +87,5 @@ public class File {
             System.out.println(ioe.getMessage());
         }
         return aux;
-    }
+    }*/
 }

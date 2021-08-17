@@ -49,16 +49,12 @@ public class Main {
                 case 1:                    
                     System.out.println("Tamanho hash");  //Modificar Depois
                     tamHash = leInteiro();
-                    HashEncadeado1 hashIntString = new HashEncadeado1<Integer, String>(tamHash, new Integer[tamHash], new String[tamHash]);
-                    HashEncadeado1 hashIntDouble = new HashEncadeado1<Integer, Double>(tamHash, new Integer[tamHash], new Double[tamHash]);
-                    Pessoa[] p = new Pessoa[tamHash];
-                    HashEncadeado1 hashIntObject = new HashEncadeado1<Integer, Pessoa>(tamHash, new Integer[tamHash], p);
-                    int i = 0;                    
-                    Pessoa pessoa = new Pessoa();
+                    HashEncadeado1 hashIntString = new HashEncadeado1<Integer, String>(tamHash, new Integer[tamHash], new String[tamHash]);                    
+                    int i = 0;                                        
                     Long timeBefore = System.currentTimeMillis();
-                    for (i = 0; i < tamHash / 2; i++) { // Se tem 1000 posições do hash, 500 elementos serão inseridos.
+                    for (i = 0; i < tamHash*2; i++) { 
                         //hashIntString.insert(i, geraString(5));
-                        hashIntDouble.insert(i, gerador.nextDouble());
+                        hashIntString.insert(gerador.nextInt(tamHash-1), geraString(6));
                         //hashIntObject.insert(i, pessoa.generateRandomPessoa());
                     }
                     Long timeAfter = System.currentTimeMillis();                    
@@ -66,11 +62,11 @@ public class Main {
 
                     // -------------------- FIND ALL -----------------------------
                     //System.out.println("Busca em uma chave aleatória do hashIntObject:");
-                    System.out.println("Mostrando chave 0 do hashIntObject");
-                    if (hashIntDouble != null) {
-                        int chave = 0;//gerador.nextInt(tamHash-1);
+                    System.out.println("Mostrando chave aleatória do hashIntString");
+                    if (hashIntString != null) {
+                        int chave =gerador.nextInt(tamHash-1);
                         System.out.print("Chave: " + chave + " ->");
-                        System.out.println(hashIntDouble.findAll(chave));
+                        System.out.println(hashIntString.findAll(chave));
                     } else {
                         System.out.println("\nHash não inicializado");
                     }
@@ -87,52 +83,69 @@ public class Main {
                         int n = leInteiro();
                         switch(escSegunda){
                             case 1:
-                                HashEncadeado1 hashPlagio = new HashEncadeado1(10000, new String[10000], new String[10000]); //Criação do Hash                                
-                                antesCarregamento = System.currentTimeMillis();
-                                verificador.carregaArquivoHash("plagio.txt", hashPlagio, n); //Hash vai ser preenchido com cadeias de N palavras;
-                                depoisCarregamento = System.currentTimeMillis();
-                                antesVerificacao = System.currentTimeMillis();
-                                boolean ehPlagioHash = verificador.verifcaByHash("dados.txt", hashPlagio, n); //Verifica se há plágio
-                                depoisVerificacao = System.currentTimeMillis();
-                                if (ehPlagioHash){
-                                    System.out.println("Arquivo plagiado");
-                                }else{
-                                    System.out.println("Não há plágio");
+                                HashEncadeado1 hashPlagio;
+                                for (int j=1; j<4; j++){
+                                    System.out.println("---------------------------");
+                                    hashPlagio = new HashEncadeado1(5000, new String[5000], new String[5000]); //Criação do Hash  
+                                    antesCarregamento = System.currentTimeMillis();
+                                    verificador.carregaArquivoHash("Arquivos para verificar/TemPlagio.txt", hashPlagio, n); //Hash vai ser preenchido com cadeias de N palavras;
+                                    depoisCarregamento = System.currentTimeMillis();
+                                    antesVerificacao = System.currentTimeMillis();
+                                    boolean ehPlagioHash = verificador.verifcaByHash("Base de Documentos/dados"+j+".txt", hashPlagio, n); //Verifica se há plágio
+                                    depoisVerificacao = System.currentTimeMillis();
+                                    if (ehPlagioHash){
+                                        System.out.println("Arquivo dados"+j+".txt plagiado");
+                                    }else{
+                                        System.out.println("Não há plágio no arquivo dados"+j+".txt");
+                                    }
+                                    System.out.println("Tempo gasto para carregar arquivo na estrutura: "+(depoisCarregamento-antesCarregamento));
+                                    System.out.println("Tempo gasto para verificar plágio usando a estrutura: "+(depoisVerificacao-antesVerificacao));
+                                    hashPlagio = null;
                                 }
-                                System.out.println("Tempo gasto para carregar arquivo na estrutura: "+(depoisCarregamento-antesCarregamento));
-                                System.out.println("Tempo gasto para verificar plágio usando a estrutura: "+(depoisVerificacao-antesVerificacao));
                                 break;
                             case 2:
-                                AVL_Functions avlTree = new AVL_Functions();
-                                antesCarregamento = System.currentTimeMillis();
-                                verificador.carregaArquivoTree("Arquivos para verificar/TemPlagio2.txt", null, avlTree, n, 0); //Carrega arquivo na Árvore.
-                                depoisCarregamento = System.currentTimeMillis();
-                                antesVerificacao = System.currentTimeMillis();
-                                boolean flagAVL = verificador.verificaByTree("Base de Documentos/dados3.txt", null,avlTree, n, 0);
-                                depoisVerificacao = System.currentTimeMillis();
-                                if (flagAVL){
-                                    System.out.println("Arquivo plagiado");
-                                }else{
-                                    System.out.println("Não há plágio");
+                                AVL_Functions avlTreePlagio;                                                                
+                                // ---- Verificando arquivo usando AVL
+                                for (int j=1; j<4; j++){
+                                    avlTreePlagio = new AVL_Functions();
+                                    System.out.println("-------------------------");
+                                    antesCarregamento = System.currentTimeMillis();
+                                    verificador.carregaArquivoTree("Arquivos para verificar/TemPlagio2.txt", null, avlTreePlagio, n, 0); //Carrega arquivo na Árvore.
+                                    depoisCarregamento = System.currentTimeMillis();
+                                    antesVerificacao = System.currentTimeMillis();
+                                    boolean flagAVL = verificador.verificaByTree("Base de Documentos/dados"+j+".txt", null,avlTreePlagio, n, 0);
+                                    depoisVerificacao = System.currentTimeMillis();
+                                    if (flagAVL){
+                                        System.out.println("Arquivo dados"+j+".txt plagiado");
+                                    }else{
+                                        System.out.println("Não há plágio no arquivo dados"+j+".txt");
+                                    }
+                                    System.out.println("Tempo gasto para carregar arquivo na estrutura: "+(depoisCarregamento-antesCarregamento));
+                                    System.out.println("Tempo gasto para verificar plágio usando a estrutura: "+(depoisVerificacao-antesVerificacao));
+                                    avlTreePlagio = null;
                                 }
-                                System.out.println("Tempo gasto para carregar arquivo na estrutura: "+(depoisCarregamento-antesCarregamento));
-                                System.out.println("Tempo gasto para verificar plágio usando a estrutura: "+(depoisVerificacao-antesVerificacao));
                                 break;
-                            case 3:
-                                RedBlackTree rbTree = new RedBlackTree();
-                                antesCarregamento = System.currentTimeMillis();
-                                verificador.carregaArquivoTree("plagio.txt", rbTree,null, n,1); //Carrega arquivo na Árvore.
-                                depoisCarregamento = System.currentTimeMillis();
-                                antesVerificacao = System.currentTimeMillis();
-                                boolean flag = verificador.verificaByTree("dados.txt", rbTree,null, n,1);
-                                depoisVerificacao = System.currentTimeMillis();
-                                if (flag){
-                                    System.out.println("Arquivo plagiado");
-                                }else{
-                                    System.out.println("Não há plágio");
+                            case 3:                                
+                                RedBlackTree rbTree;
+                                for (int j=1; j<4; j++){
+                                    System.out.println("-----------------");
+                                    rbTree = new RedBlackTree();
+                                    antesCarregamento = System.currentTimeMillis();
+                                    verificador.carregaArquivoTree("Arquivos para verificar/TemPlagio.txt", rbTree,null, n,1); //Carrega arquivo na Árvore.
+                                    depoisCarregamento = System.currentTimeMillis();
+                                    antesVerificacao = System.currentTimeMillis();
+                                    boolean flag = verificador.verificaByTree("Base de Documentos/dados"+j+".txt", rbTree,null, n,1);
+                                    depoisVerificacao = System.currentTimeMillis();
+                                    if (flag){
+                                        System.out.println("Arquivo dados"+j+".txt plagiado");
+                                    }else{
+                                        System.out.println("Não há plágio no arquivo dados"+j+".txt");
+                                    }
+                                    System.out.println("Tempo gasto para carregar arquivo na estrutura: "+(depoisCarregamento-antesCarregamento));
+                                    System.out.println("Tempo gasto para verificar plágio usando a estrutura: "+(depoisVerificacao-antesVerificacao));
+                                    rbTree = null;
                                 }
-                                System.out.println("Tempo gasto para carregar arquivo na estrutura: "+(depoisCarregamento-antesCarregamento));
-                                System.out.println("Tempo gasto para verificar plágio usando a estrutura: "+(depoisVerificacao-antesVerificacao));
+                                
                                 break;
                             default:
                                 break;

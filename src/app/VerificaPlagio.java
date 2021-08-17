@@ -96,7 +96,7 @@ public class VerificaPlagio  {
                     frase += " " + texto[i+j];
                     j++;
                 }
-                System.out.println(frase);
+                //System.out.println(frase);
                 frase.toLowerCase();
                 list = he.findAll(frase);
                 if(!list.isEmpty()){
@@ -138,6 +138,7 @@ public class VerificaPlagio  {
                     frase += " " + texto[i+j];
                     j++;
                 }
+                frase.toLowerCase();
                 if (flag ==  0 && avlTree != null){
                     if (avlTree.search(frase)){
                         //System.out.println(frase);
