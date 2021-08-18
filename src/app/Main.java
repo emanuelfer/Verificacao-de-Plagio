@@ -8,7 +8,6 @@ package app;
 import Objects.Pessoa;
 import file.File;
 import hash.HashDuplo;
-import hash.HashEncadeado;
 import hash.HashLinear;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -49,12 +48,11 @@ public class Main {
                 case 1:                    
                     System.out.println("Tamanho hash");  //Modificar Depois
                     tamHash = leInteiro();
-                    HashEncadeado1 hashIntString = new HashEncadeado1<Integer, String>(tamHash, new Integer[tamHash], new String[tamHash]);                    
+                    HashEncadeado1 hashIntString = new HashEncadeado1<Integer, Integer>(tamHash, new Integer[tamHash], new Integer[tamHash]);                    
                     int i = 0;                                        
                     Long timeBefore = System.currentTimeMillis();
-                    for (i = 0; i < tamHash*2; i++) { 
-                        System.out.println("oi");
-                        hashIntString.insert(gerador.nextInt(tamHash-1), geraString(6));
+                    for (i = 0; i < tamHash*10; i++) { 
+                        hashIntString.insert(gerador.nextInt(tamHash), gerador.nextInt(tamHash));
 
                     }
                     Long timeAfter = System.currentTimeMillis();                    
@@ -64,7 +62,7 @@ public class Main {
                     //System.out.println("Busca em uma chave aleatória do hashIntObject:");
                     System.out.println("Mostrando chave aleatória do hashIntString");
                     if (hashIntString != null) {
-                        int chave =gerador.nextInt(tamHash-1);
+                        int chave =gerador.nextInt(tamHash);
                         System.out.print("Chave: " + chave + " ->");
                         System.out.println(hashIntString.findAll(chave));
                     } else {

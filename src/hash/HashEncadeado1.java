@@ -34,11 +34,7 @@ public class HashEncadeado1 <T, T1>{
     
     public int hash(T x){
         int code;
-        if(x.hashCode() < 0)
-            code = -x.hashCode();
-        else
-            code = x.hashCode();
-        return (code % this.buckets);
+        return (Math.abs(x.hashCode()) % this.buckets);
     }
     
     public void insert(T key, T value){
@@ -49,16 +45,27 @@ public class HashEncadeado1 <T, T1>{
             }
             index = (index + 1)%this.buckets;
         }
+        System.out.println("chave: " + key);
         this.keys[index] = key;
         //this.values[index].add(value);
-        this.values[index].insert(value);
+        this.values[index].insert(key, value);
         //this.show();
     }
     
     public List<T1> findAll(T key){
-        int index = hash(key);
+        int index = hash(key), cont =1;
+        while(this.keys[index] != null){
+            if(this.keys[index].equals(key)){
+                break;
+            }
+            index = (index + 1)%this.buckets;
+            if(cont == this.buckets)
+                return null;
+        }
+        if(this.keys[index] == null )
+            return null;
         List<T1> retorno = new LinkedList<>();
-        List<T1> list = this.values[index].getAll();
+        List<T1> list = this.values[index].getAll(this.keys[index]);
         for(T1 s : list){
             retorno.add(s);
         }

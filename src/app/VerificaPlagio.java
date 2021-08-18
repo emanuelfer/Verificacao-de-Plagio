@@ -6,7 +6,6 @@
 package app;
 
 import file.File;
-import hash.HashEncadeado;
 import java.text.Normalizer;
 import java.util.LinkedList;
 import java.util.List;

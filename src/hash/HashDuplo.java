@@ -15,25 +15,33 @@ import java.util.List;
  */
 public class HashDuplo <T>{
     private T[] keys;
+    private int size = 0;
     
     public HashDuplo(T[] keys){
         this.keys = keys;
     }
     
     
-    public void insert(T key){
-        
-        Integer i = 1, index;
+    public void insert(T key, T value){
+        Integer i = 1, index, cont = 0;
         index = hash1(key)%this.keys.length;
         while(this.keys[index] != null){
-            if(this.keys[index].equals(key))
+
+            if(this.keys[index].equals(value)){
+                System.out.println("sim");
                 return;
-            if(this.keys[index] == key)
-                return;
+
+            }
             index = (hash1(key) + i*hash2(key))%this.keys.length;
+            index = Math.abs(index);
             i++;
+            cont++;
+            if(cont == this.keys.length)
+                return;
         }
-        this.keys[index] = key;
+        this.size++;
+        System.out.println(value);
+        this.keys[index] = value;
     }
     
 //    public T search(T key){
@@ -86,15 +94,21 @@ public class HashDuplo <T>{
 //        }
 //    }
 //    
-    public List<T> getAll(){
-        int cont = 0;
+    public List<T> getAll(T key){
+        int i=1, index, cont = 0;
         List<T> list = new LinkedList<>();
-        for(int i = 0; i< this.keys.length ; i++){
-            cont++;
-            if(this.keys[i] != null)
-                list.add(this.keys[i]);
-        }
         //System.out.println("O("+cont+")");
+        index = hash1(key)%this.keys.length;
+        while(this.keys[index] != null){
+            list.add(this.keys[index]);
+            index = (hash1(key) + i*hash2(key))%this.keys.length;
+            index = Math.abs(index);
+            i++;
+            cont++;
+            System.out.println(cont);
+            if(cont == this.size)
+                return list;
+        }
         return list;
     }
     
