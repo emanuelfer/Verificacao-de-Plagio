@@ -22,21 +22,13 @@ public class HashDuplo <T>{
     }
     
     
-<<<<<<< HEAD
-    public void insert(T key){
-        
-        Integer i = 1, index;
-        
-=======
     public void insert(T key, T value){
         Integer i = 1, index, cont = 0;
->>>>>>> 361233bc18d9baee99358812c10a0a03ce9e9dcd
         index = hash1(key)%this.keys.length;
-        System.out.println(index);
         while(this.keys[index] != null){
 
             if(this.keys[index].equals(value)){
-                System.out.println("sim");
+                //System.out.println("sim");
                 return;
 
             }
@@ -48,7 +40,7 @@ public class HashDuplo <T>{
                 return;
         }
         this.size++;
-        System.out.println(value);
+        //System.out.println(value);
         this.keys[index] = value;
     }
     
@@ -66,7 +58,6 @@ public class HashDuplo <T>{
     
     public Integer hash1(T key){
         int code = Math.abs(key.hashCode()) + 37;
-        
         return code;
     }
     
@@ -114,14 +105,14 @@ public class HashDuplo <T>{
             index = Math.abs(index);
             i++;
             cont++;
-            System.out.println(cont);
+            //System.out.println(cont);
             if(cont == this.size)
                 return list;
         }
         return list;
     }
     
-//    public void show(){
+// public void show(){
 //        for(int i = 0; i< this.keys.length ; i++){
 //            if(this.keys[i] != null)
 //                System.out.println(this.keys[i] + " - " + this.values[i]);

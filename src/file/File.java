@@ -42,30 +42,12 @@ public class File {
         }
         BufferedReader buffer = new BufferedReader(input);
         String linha = "";
-        String[] aux = null; //Testar com LinkedList
+        String[] aux = null;
         List<String> texto = new ArrayList<>();
         try {
             linha = buffer.readLine();
             while (linha != null){
                 texto.add(linha);
-<<<<<<< HEAD
-                while (linha != null){
-                    linha = buffer.readLine();
-                    texto.add(linha);
-                    
-                }
-                linha = "";
-                for (String s : texto){                   
-                        linha += " " + s;
-                    
-                }
-                linha = linha.replace(".", " ");
-                linha = linha.replace(",", " ");
-                aux = linha.split(" "); //nomeDalista = linha.split(' ');
-                
-            }
-            buffer.close();
-=======
                 linha = buffer.readLine();
             }
             linha = "";
@@ -78,15 +60,13 @@ public class File {
                 
             
             
->>>>>>> 361233bc18d9baee99358812c10a0a03ce9e9dcd
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
-        
         return aux;
     }
     
-    public static String[] read(String file){
+    /*public static String[] read(String file){
         List<String> texto = null;
         Path path = Paths.get(file);
         String string = "";
@@ -95,7 +75,6 @@ public class File {
             texto = Files.readAllLines(path);   
             for(String s : texto){
                 
-
                 string += " " + s;
             }
             
@@ -107,5 +86,5 @@ public class File {
             System.out.println(ioe.getMessage());
         }
         return aux;
-    }
+    }*/
 }
