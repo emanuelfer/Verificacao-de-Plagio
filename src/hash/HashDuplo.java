@@ -24,7 +24,9 @@ public class HashDuplo <T>{
     public void insert(T key){
         
         Integer i = 1, index;
+        
         index = hash1(key)%this.keys.length;
+        System.out.println(index);
         while(this.keys[index] != null){
             if(this.keys[index].equals(key))
                 return;
@@ -50,6 +52,7 @@ public class HashDuplo <T>{
     
     public Integer hash1(T key){
         int code = Math.abs(key.hashCode()) + 37;
+        
         return code;
     }
     

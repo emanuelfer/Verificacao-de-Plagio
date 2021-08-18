@@ -56,7 +56,7 @@ public class VerificaPlagio  {
         for(int i = 0; i <= aux.length-m; i++){
             j=0;
             while(j < m){
-                if(aux[i+j].isEmpty()){
+                if(aux[i+j].isEmpty()){//|| aux[i+j].equals("null")){
                     i++;
                     continue;
                 }
@@ -76,7 +76,7 @@ public class VerificaPlagio  {
     
     public boolean verifcaByHash(String file, HashEncadeado1 he, int m){
         //String[] texto = File.read(file);
-        String[] texto = File.leBuffered(file);
+        String[] texto = File.leBuffered(file);        
         List<String> list;
         int testeJuncoes;
         int j = 0;
@@ -88,7 +88,7 @@ public class VerificaPlagio  {
                 testeJuncoes=0;
                 frase = "";
                 while(j < m){
-                    if(texto[i+j].isEmpty()){
+                    if(texto[i+j].isEmpty()){//|| texto[i+j].equals("null")){
                         i++;
                         continue;
                     }
@@ -104,7 +104,7 @@ public class VerificaPlagio  {
                         testeJuncoes++;
                         if(frase.equals(string)){
                             //System.out.println("Quant: "+testeJuncoes);
-                            //System.out.println("Chave: "+string);
+                            System.out.println("Chave: "+string);
                             return true;
                         }
                     }
@@ -119,34 +119,42 @@ public class VerificaPlagio  {
     public boolean verificaByTree(String file, RedBlackTree rbTree, AVL_Functions avlTree, int m, int flag){
         //String[] texto = File.read(file);
         String[] texto = File.leBuffered(file);
+        /*for(String s : texto){
+            System.out.println(s);
+        }*/
+        //System.out.println(texto.length);
         List<String> list;
         int testeJuncoes;
         int j = 0;
         String frase = "";
+        System.out.println(texto[1]);
         if (texto != null){
 
             for(int i = 0; i <= texto.length-m; i++){
                 j=0;
                 testeJuncoes=0;
                 frase = "";
-                while(j < m){
+                while(j < m){                    
                     if(texto[i+j].isEmpty()){
                         i++;
+                        System.out.println("Sim");
                         continue;
                     }
-
+                    System.out.println("I+J ="+(i+j));
+                    System.out.println("Texto[i+j] = "+texto[i+j]);
                     frase += " " + texto[i+j];
+                    
                     j++;
                 }
                 frase.toLowerCase();
                 if (flag ==  0 && avlTree != null){
                     if (avlTree.search(frase)){
-                        //System.out.println(frase);
+                        System.out.println("Frase:"+frase);
                         return true;
                     }
                 }else if (flag == 1 && rbTree != null){
                     if(rbTree.search(frase)){
-                        //System.out.println(frase);
+                        System.out.println("Frase:"+ frase);
                         return true;
 
                     }

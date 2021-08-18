@@ -70,7 +70,8 @@ public class Main {
                     } else {
                         System.out.println("\nHash não inicializado");
                     }
-
+                    // ---------------- Mostra Tudo
+                    
                     break;
                 case 2:
                     int escSegunda=1;
@@ -83,6 +84,10 @@ public class Main {
                         int n = leInteiro();
                         switch(escSegunda){
                             case 1:
+                                /*
+                                    Colocar para ler arquivos da base de dados no inicio do programa.
+                                    3 - Vetores
+                                */
                                 HashEncadeado1 hashPlagio;
                                 for (int j=1; j<4; j++){
                                     System.out.println("---------------------------");

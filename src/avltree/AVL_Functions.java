@@ -224,7 +224,7 @@ public class AVL_Functions {
                 else
                     temp = temp.getEsquerda();
             }else if(data.equals(temp.getKey())){
-                System.out.println(data + " - " + temp.getKey());
+                //System.out.println(data + " - " + temp.getKey());
                 break;
             }else{
                 if(temp.getDireita() == null)
