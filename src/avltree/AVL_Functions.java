@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package avltree;
 
 import java.util.ArrayList;
@@ -12,12 +8,6 @@ import java.util.ArrayList;
  * @author Pedro
  */
 
-
-/*
-
-    TODO: IMPLEMENTAR CLASSE TREE_AVL e testar.
-
-*/
 public class AVL_Functions {
     
     protected AVL_Node raiz;
@@ -30,17 +20,7 @@ public class AVL_Functions {
     public void insertAVL(AVL_Node noCompara, AVL_Node noInsere){
         if (noCompara == null){
             this.raiz = noInsere;
-        }else{
-            //Convertendo a string em valor ASCII
-            /*int noComparaASCII = 0;
-            int noInsereASCII = 0;
-            for (int i=0; i<noCompara.getKey().length(); i++){
-                noComparaASCII += noComparaASCII+noCompara.getKey().charAt(i);
-            }
-            for (int j=0; j<noInsere.getKey().length(); j++){
-                noInsereASCII += noInsereASCII+noInsere.getKey().charAt(j);
-            }*/
-            //Fim cast
+        }else{            
             if (noInsere.getKey().compareTo(noCompara.getKey()) < 0){ //Inserido a esquerda
                 if (noCompara.getEsquerda() == null){
                     noCompara.setEsquerda(noInsere);
@@ -138,36 +118,7 @@ public class AVL_Functions {
         no.setDireita(rotacaoDireita(no.getDireita()));
         return rotacaoEsquerda(no);
     }
-    
-    /*public void verificaBalance(AVL_Node no){
-        setBalance(no);
-        int balace = no.getBalance();
-        int alturaEsquerdaEsquerda = CalculaAltura(no.getEsquerda().getEsquerda());
-        int alturaEsquerdaDireita = CalculaAltura(no.getEsquerda().getDireita());
-        int alturaDireitaEsquerda = CalculaAltura(no.getDireita().getEsquerda());
-        int alturaDireitaDireita = CalculaAltura(no.getDireita().getDireita());
         
-        if (balace == -2){
-            if (alturaEsquerdaEsquerda >= alturaEsquerdaDireita){
-                no = rotacaoDireita(no);
-            }else{
-                no = duplaRotacaoEsquerdaDireita(no);
-            }
-        }else if (balace == 2){
-            if (alturaDireitaDireita >= alturaDireitaEsquerda){
-                no = rotacaoEsquerda(no);
-            }else{
-                no = duplaRotacaoDireitaEsquerda(no);
-            }
-        }
-        
-        if (no.getPai() != null){
-            verificaBalance(no.getPai());
-        }else{
-            this.raiz = no;
-        }
-    }*/
-    
     public void verificarBalanceamento(AVL_Node atual) {
 		setBalance(atual);
 		int balanceamento = atual.getBalance();
@@ -199,7 +150,7 @@ public class AVL_Functions {
 	}
     
     
-    // << -- TESTAR -- >>
+    
     final protected ArrayList<AVL_Node> showInorder(){
         ArrayList<AVL_Node> retornoLista = new ArrayList<AVL_Node>();
         return retornoLista;

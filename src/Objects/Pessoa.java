@@ -2,10 +2,15 @@
 package Objects;
 import java.util.Random;
 
-/**
- *
- * @author Pedro
+/*
+ * Autores: Pedro Víctor de Abreu Fonseca
+ * Data de modificação: 18/08/2021 por Pedro Víctor de Abreu Fonseca
+        -> Adesão de comentários
+ * Classe: Pessoa
+ * O que faz: Classe que pode ser utilizada em testes.
+ * Revisado em: ...
  */
+
 public class Pessoa {
     protected int idade;
     protected String nome;

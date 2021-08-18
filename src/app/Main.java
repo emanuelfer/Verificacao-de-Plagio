@@ -44,9 +44,9 @@ public class Main {
 
     public static void main(String[] args) {
         Random gerador = new Random();
-        LinkedList<String[]> arquivosBase = new LinkedList<>();
+        LinkedList<String[]> arquivosBase = new LinkedList<>(); //Estrutura que guardará palavras de cada arquivo da base de dados em uma posição.
         for (int i = 1; i < 4; i++) {
-            arquivosBase.add(File.leBuffered("Base de Documentos/dados" + i + ".txt"));
+            arquivosBase.add(File.leBuffered("Base de Documentos/dados" + i + ".txt")); //Leitura e preenchimento.
         }
 
         int esc = 1, tamHash = 0;
@@ -60,7 +60,7 @@ public class Main {
                     HashEncadeado1 hashIntString = new HashEncadeado1<Integer, Integer>(tamHash, new Integer[tamHash], new Integer[tamHash]);
                     int i = 0;
                     Long timeBefore = System.currentTimeMillis();
-                    for (i = 0; i < tamHash * 10; i++) {
+                    for (i = 0; i < tamHash * 10; i++) { //Preenchimento do hash com valores aleatórios.
                         hashIntString.insert(gerador.nextInt(tamHash), gerador.nextInt(tamHash));
 
                     }
@@ -69,10 +69,10 @@ public class Main {
 
                     // -------------------- FIND ALL -----------------------------
                     System.out.println("Digite uma chave para busca");
-                    int chave = leInteiro();
+                    int chave = leInteiro(); 
                     if (hashIntString != null) {
                         System.out.print("Chave: " + chave + " ->");
-                        System.out.println(hashIntString.findAll(chave));
+                        System.out.println(hashIntString.findAll(chave)); //Busca de uma chave digitada pelo usuário.
                     } else {
                         System.out.println("\nHash não inicializado");
                     }
@@ -96,7 +96,7 @@ public class Main {
                         int n = leInteiro();
                         System.out.println("Nome do arquivo para verificar mais o formato");
                         nomeArquivo = leString();
-                        if (nomeArquivo.contains(".txt") == false) {                            
+                        if (nomeArquivo.contains(".txt") == false) { //Caso o usuário digite o nome sem o formato.                           
                             nomeArquivo+=".txt";
                         }
                         System.out.println(nomeArquivo);
