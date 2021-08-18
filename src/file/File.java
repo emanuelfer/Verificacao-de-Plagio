@@ -46,8 +46,9 @@ public class File {
         List<String> texto = new ArrayList<>();
         try {
             linha = buffer.readLine();
-            if (linha != null){
+            while (linha != null){
                 texto.add(linha);
+<<<<<<< HEAD
                 while (linha != null){
                     linha = buffer.readLine();
                     texto.add(linha);
@@ -64,6 +65,20 @@ public class File {
                 
             }
             buffer.close();
+=======
+                linha = buffer.readLine();
+            }
+            linha = "";
+            for(String s : texto){
+                linha += " " + s;
+            }
+            linha = linha.replace(".", " ");
+            linha = linha.replace(",", " ");
+            aux = linha.split(" ");
+                
+            
+            
+>>>>>>> 361233bc18d9baee99358812c10a0a03ce9e9dcd
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
