@@ -55,13 +55,23 @@ public class Main {
             esc = leInteiro();
             switch (esc) {
                 case 1:
+                    int chave, value;
                     System.out.println("Tamanho hash");
                     tamHash = leInteiro();
-                    HashEncadeado1 hashIntString = new HashEncadeado1<Integer, Integer>(tamHash, new Integer[tamHash], new Integer[tamHash]);
+                    HashEncadeado1 hashInt = new HashEncadeado1<Integer, Integer>(tamHash, new Integer[tamHash], new Integer[tamHash]);
                     int i = 0;
-                    Long timeBefore = System.currentTimeMillis();
-                    for (i = 0; i < tamHash * 10; i++) { //Preenchimento do hash com valores aleatórios.
-                        hashIntString.insert(gerador.nextInt(tamHash), gerador.nextInt(tamHash));
+                    Long timeBefore = System.currentTimeMillis();                    
+                    for (i = 0; i < tamHash ; i++) { //Preenchimento do hash com valores aleatórios.
+                        chave = tamHash;
+                        while (chave >= tamHash || chave < 0){
+                            System.out.println("CHAVE:");
+                            chave = leInteiro();
+                        }
+                        System.out.println("Valor");
+                        value = leInteiro();
+                        hashInt.insert(chave, value);
+                        //hashInt.insert(gerador.nextInt(tamHash-1), Math.abs(gerador.nextInt(1000)));
+                        
 
                     }
                     Long timeAfter = System.currentTimeMillis();
@@ -69,16 +79,16 @@ public class Main {
 
                     // -------------------- FIND ALL -----------------------------
                     System.out.println("Digite uma chave para busca");
-                    int chave = leInteiro(); 
-                    if (hashIntString != null) {
+                    chave = leInteiro(); 
+                    if (hashInt != null) {
                         System.out.print("Chave: " + chave + " ->");
-                        System.out.println(hashIntString.findAll(chave)); //Busca de uma chave digitada pelo usuário.
+                        System.out.println(hashInt.findAll(chave)); //Busca de uma chave digitada pelo usuário.
                     } else {
                         System.out.println("\nHash não inicializado");
                     }
 
                     System.out.println("--------------- Mostrando Tudo ---- ");
-                    hashIntString.show();
+                    hashInt.show();
 
                     break;
                 case 2:

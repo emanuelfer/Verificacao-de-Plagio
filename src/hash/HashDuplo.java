@@ -31,28 +31,30 @@ public class HashDuplo <T>{
     */
     public void insert(T key, T value){
         Integer i = 1, index, cont = 0;
-        index = hash1(key)%this.keys.length;
-        while(this.keys[index] != null){
+        if (key != null){
+            index = hash1(key)%this.keys.length;
+            while(this.keys[index] != null){
 
-            if(this.keys[index].equals(value)){
-                //System.out.println("sim");
-                return;
+                if(this.keys[index].equals(value)){
+                    //System.out.println("sim");
+                    return;
 
+                }
+                index = (hash1(key) + i*hash2(key))%this.keys.length;
+                index = Math.abs(index);
+                i++;
+                cont++;
+                if(cont == this.keys.length)
+                    return;
             }
-            index = (hash1(key) + i*hash2(key))%this.keys.length;
-            index = Math.abs(index);
-            i++;
-            cont++;
-            if(cont == this.keys.length)
-                return;
+            this.size++;        
+            this.keys[index] = value;
         }
-        this.size++;        
-        this.keys[index] = value;
     }
     
     
     public Integer hash1(T key){
-        int code = Math.abs(key.hashCode()) + 37;
+        int code = Math.abs(key.hashCode()) + 37;                    
         return code;
     }
     
@@ -77,16 +79,18 @@ public class HashDuplo <T>{
     
     public List<T> getAll(T key){
         int i=1, index, cont = 0;
-        List<T> list = new LinkedList<>();    
-        index = hash1(key)%this.keys.length;
-        while(this.keys[index] != null){
-            list.add(this.keys[index]);
-            index = (hash1(key) + i*hash2(key))%this.keys.length;
-            index = Math.abs(index);
-            i++;
-            cont++;    
-            if(cont == this.size)
-                return list;
+        List<T> list = new LinkedList<>(); 
+        if (key != null){
+            index = hash1(key)%this.keys.length;
+            while(this.keys[index] != null){
+                list.add(this.keys[index]);
+                index = (hash1(key) + i*hash2(key))%this.keys.length;
+                index = Math.abs(index);
+                i++;
+                cont++;    
+                if(cont == this.size)
+                    return list;
+            }
         }
         return list;
     }    
