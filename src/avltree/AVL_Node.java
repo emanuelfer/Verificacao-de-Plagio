@@ -1,13 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package avltree;
 
-/**
- *
- * @author Pedro
+/*
+ * Autores: Pedro Víctor de Abreu Fonseca
+ * Data de modificação: 19/08/2021 por Pedro Víctor de Abreu Fonseca
+        -> Adesão de comentários.
+ * Classe: AVL_Node
+ * O que faz: Define a estrutura de um nó de uma árvore AVL.
+ * Revisado em: ...
  */
 public class AVL_Node {
     private AVL_Node noEsquerda;

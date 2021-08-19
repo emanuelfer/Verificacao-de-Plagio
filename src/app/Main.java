@@ -55,13 +55,16 @@ public class Main {
             esc = leInteiro();
             switch (esc) {
                 case 1:
-                    int chave, value;
-                    System.out.println("Tamanho hash");
+                    int chave, value, quantValue;
+                    System.out.println("Tamanho hash?");
                     tamHash = leInteiro();
+                    System.out.println("Quantos valores?");
+                    quantValue = leInteiro();
                     HashEncadeado1 hashInt = new HashEncadeado1<Integer, Integer>(tamHash, new Integer[tamHash], new Integer[tamHash]);
                     int i = 0;
-                    Long timeBefore = System.currentTimeMillis();                    
-                    for (i = 0; i < tamHash ; i++) { //Preenchimento do hash com valores aleatórios.
+                    Long timeBefore = System.currentTimeMillis();
+                    Long tempoInsert= Integer.toUnsignedLong(0), tempoDepoisINSERT=Integer.toUnsignedLong(0);
+                    for (i = 0; i < quantValue ; i++) { 
                         chave = tamHash;
                         while (chave >= tamHash || chave < 0){
                             System.out.println("CHAVE:");
@@ -69,13 +72,14 @@ public class Main {
                         }
                         System.out.println("Valor");
                         value = leInteiro();
+                        tempoInsert += System.currentTimeMillis();
                         hashInt.insert(chave, value);
-                        //hashInt.insert(gerador.nextInt(tamHash-1), Math.abs(gerador.nextInt(1000)));
-                        
-
-                    }
+                        tempoDepoisINSERT += System.currentTimeMillis();                        
+                        //hashInt.insert(gerador.nextInt(tamHash-1), Math.abs(gerador.nextInt(1000)));                        
+                    }                    
                     Long timeAfter = System.currentTimeMillis();
-                    System.out.println("Tempo Médio da operação de inserção em todos os Hashs: " + (timeAfter - timeBefore) / 3);
+                    System.out.println("Tempo médio da operação de inserção SEM processos de I/O: "+(tempoDepoisINSERT-tempoInsert)/tamHash);
+                    System.out.println("Tempo Médio da operação de inserção COM processos de I/O: " + (timeAfter - timeBefore));
 
                     // -------------------- FIND ALL -----------------------------
                     System.out.println("Digite uma chave para busca");
