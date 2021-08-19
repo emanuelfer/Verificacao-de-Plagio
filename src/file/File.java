@@ -1,10 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package file;
-
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -19,14 +13,28 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-//import sun.misc.IOUtils;
 
-/**
- *
- * @author emanu
+
+/*
+ * Autores: Emanuel Lindoso Ferreira e Pedro Víctor de Abreu Fonseca
+ * Data de modificação: 18/08/2021 por Pedro Víctor de Abreu Fonseca
+        -> Adesão de comentários.
+ * Classe: File
+ * O que faz: Lê arquivos.
+ * Revisado em: ...
  */
+
 public class File {
     
+    /*
+       * Função: leBuffered(String file)
+       * Descrição: Lê um arquivo 'file'
+       * Utilização: main(String []args), VerificaPlagio
+       * Parâmetros:            
+            file: Caminho contendo o arquivo que será lido.
+       * Retorno: Vetor de strings onde cada posição representa uma palavra do arquivo.
+     */
+
     public static String[] leBuffered(String file){
         FileInputStream arq = null;
         try {
@@ -64,28 +72,5 @@ public class File {
             System.out.println(ex.getMessage());
         }
         return aux;
-    }
-    
-    /*public static String[] read(String file){
-        List<String> texto = null;
-        Path path = Paths.get(file);
-        String string = "";
-        String[] aux = null;
-        try{
-            texto = Files.readAllLines(path);   
-            for(String s : texto){
-                
-
-                string += " " + s;
-            }
-            
-            string = string.replace(".", "");
-            string = string.replace(",", "");
-            
-            aux = string.split(" ");
-        }catch(IOException ioe){
-            System.out.println(ioe.getMessage());
-        }
-        return aux;
-    }*/
+    }        
 }

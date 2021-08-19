@@ -322,7 +322,7 @@ public class RedBlackTree {
                 else
                     temp = temp.left;
             }else if(data.equals(temp.key)){
-                System.out.println(data + " - " + temp.key);
+               // System.out.println(data + " - " + temp.key);
                 break;
             }else{
                 if(temp.right == null)
