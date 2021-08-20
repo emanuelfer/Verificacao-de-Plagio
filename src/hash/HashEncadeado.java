@@ -62,7 +62,6 @@ public class HashEncadeado <T, T1>{
        * Retorno: Nenhum.
     */
     public void insert(T key, T value){
-         System.out.println(this.buckets);
         int index = hash(key); //Calcula index
         while(this.keys[index] != null){
             if(this.keys[index].equals(key)){

@@ -298,7 +298,6 @@ public class RedBlackTree {
         
     public void preOrder(Node node){
         if(node != null){
-            System.out.println(node.key + " ");
             this.preOrder(node.left);
             this.preOrder(node.right);
         }

@@ -105,8 +105,11 @@ public class Main {
                      antesVerificacao,
                      depoisVerificacao;
                     while (escSegunda > 0) {
+                        System.out.println("0 - Voltar");
                         System.out.println("1 - Por Hash\n2- AVL\n3- RB");
                         escSegunda = lerInteiro();
+                        if(escSegunda <=0)
+                            break;
                         String nomeArquivo = "";                        
                         System.out.println("Quantas palavras para verificar?");
                         int n = lerInteiro();
@@ -116,7 +119,10 @@ public class Main {
                             nomeArquivo+=".txt";
                         }
                         System.out.println(nomeArquivo);
+                        System.out.println(escSegunda);
                         switch (escSegunda) {
+                            case 0:
+                                break;
                             case 1:
                                 HashEncadeado hashPlagio;
                                 for (int j = 0; j < arquivosBase.size(); j++) {

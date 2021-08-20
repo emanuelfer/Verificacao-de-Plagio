@@ -59,9 +59,7 @@ public class AVL_Functions {
                 }else{
                     insertAVL(noCompara.getDireita(), noInsere);
                 }
-            }else{ //No já existe
-                return;
-            }
+            }// Nó já existe
         }
         
     }
