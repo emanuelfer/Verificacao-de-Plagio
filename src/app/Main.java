@@ -55,8 +55,8 @@ public class Main {
             esc = lerInteiro();
             switch (esc) {
                 case 1:
-                    Long tempoInsert= Integer.toUnsignedLong(0);
-                    int chave, value, quantValue;
+                    long tempoInsert, tempoFim;
+                    int chave, value;
                     System.out.println("Tamanho hash?");
                     tamHash = lerInteiro();
                     HashEncadeado hashInt = new HashEncadeado<Integer, Integer>(tamHash, new Integer[tamHash], new Integer[tamHash]);
@@ -66,6 +66,7 @@ public class Main {
                         System.out.println("1 - Inserir Valores");
                         System.out.println("2 - Buscar");
                         System.out.println("3 - Mostrar Hash");
+                        System.out.println("4 - Aleatório");
                         esc = lerInteiro();
                         switch(esc){
                             case 0:
@@ -77,7 +78,8 @@ public class Main {
                                 value = lerInteiro();
                                 tempoInsert = System.currentTimeMillis();
                                 hashInt.insert(chave, value);
-                                System.out.println("Tempo Médio da operação de inserção COM processos de I/O: " + (System.currentTimeMillis() - tempoInsert));
+                                tempoFim = System.currentTimeMillis();
+                                System.out.println("Tempo Médio da operação de inserção COM processos de I/O: " + (tempoFim - tempoInsert));
                                 break;
                             case 2:
                                 System.out.println("Digite uma chave para busca");
@@ -92,6 +94,19 @@ public class Main {
                             case 3:
                                 System.out.println("--------------- Mostrando Tudo ---- ");
                                 hashInt.show();
+                                break;
+                             
+                            case 4:
+                                tamHash = gerador.nextInt(10000);    
+                                System.out.println("Tamanho do hash: " + tamHash);
+                                hashInt = new HashEncadeado<Integer, Integer>(tamHash, new Integer[tamHash], new Integer[tamHash]);
+                                tempoInsert = System.currentTimeMillis();
+                                for(int i = 0; i< tamHash*10;i++){
+                                    hashInt.insert(gerador.nextInt(10*tamHash), gerador.nextInt(10*tamHash));
+                                }
+                                tempoFim = System.currentTimeMillis();
+                                System.out.println("O tempo inserção foi: " + (tempoFim-tempoInsert));
+
                                 break;
                         }    
                     }

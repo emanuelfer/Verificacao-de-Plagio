@@ -18,7 +18,7 @@ public class HashEncadeado <T, T1>{
     private int buckets;
     private T[] keys;
     private HashDuplo[] values;
-    private int cont;
+    private int size;
     /*
        * Função: HashEncadeado1(int b, T[] keys, T1[] values)
        * Descrição: Inicializa a estrutura.
@@ -36,7 +36,7 @@ public class HashEncadeado <T, T1>{
         for(int i = 0; i< this.buckets; i++){
             this.values[i] = new HashDuplo<>(Arrays.copyOf(values, this.buckets)); //Para cada Key será gerada um HashDuplo evitando valores repetidos e colisões.
         }
-        this.cont=0;
+        this.size=0;
     }
     
     /*
@@ -62,6 +62,7 @@ public class HashEncadeado <T, T1>{
        * Retorno: Nenhum.
     */
     public void insert(T key, T value){
+        int cont=1;
         int index = hash(key); //Calcula index
         while(this.keys[index] != null){
             if(this.keys[index].equals(key)){
@@ -71,10 +72,12 @@ public class HashEncadeado <T, T1>{
             /*if (this.cont == this.keys.length){
                 return;
             }*/
+            if(cont++ == this.size)
+                return;
         }                
         this.keys[index] = key; //Seta chave        
         this.values[index].insert(key, value); //Chama a função de insert do HashDuplo daquela posição.        
-        //this.cont++;
+        this.size++;
     }
     
     /*
