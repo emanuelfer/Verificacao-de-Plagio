@@ -3,11 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/emanu/OneDrive/Documentos/NetBeansProjects/Hash/src/file/File.java</file>
             <file>file:/C:/Users/emanu/OneDrive/Documentos/NetBeansProjects/Hash/src/hash/HashDuplo.java</file>
             <file>file:/C:/Users/emanu/OneDrive/Documentos/NetBeansProjects/Hash/src/app/VerificaPlagio.java</file>
             <file>file:/C:/Users/emanu/OneDrive/Documentos/NetBeansProjects/Hash/src/app/Main.java</file>
             <file>file:/C:/Users/emanu/OneDrive/Documentos/NetBeansProjects/Hash/src/hash/HashEncadeado1.java</file>
+=======
+            <file>file:/C:/Users/mihel/Documents/NetBeansProjects/Verificacao-de-Plagio/src/app/Main.java</file>
+            <file>file:/C:/Users/mihel/Documents/NetBeansProjects/Verificacao-de-Plagio/src/rbtree/RedBlackTree.java</file>
+            <file>file:/C:/Users/mihel/Documents/NetBeansProjects/Verificacao-de-Plagio/src/avltree/AVL_Node.java</file>
+>>>>>>> ce1368b4d89560682760f3ee76b70c910243d4f0
         </group>
     </open-files>
 </project-private>
