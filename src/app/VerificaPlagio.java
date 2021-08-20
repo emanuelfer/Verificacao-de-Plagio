@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import rbtree.RedBlackTree;
 import avltree.AVL_Functions;
-import hash.HashEncadeado1;
+import hash.HashEncadeado;
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 
@@ -30,7 +30,7 @@ public class VerificaPlagio  {
        * Retorno: Nenhum.
      */
     
-    public void carregaArquivoHash(String file, HashEncadeado1 he, int m){       
+    public void carregaArquivoHash(String file, HashEncadeado he, int m){       
         String[] aux = File.leBuffered(file); //Leitura do arquivo
         int j;
         String frase = "";
@@ -112,7 +112,7 @@ public class VerificaPlagio  {
             m: Tamanho de cada frase que se deseja verificar se ocorre plágio
        * Retorno: Booleano que indica se existe plágio ou não.
      */
-    public boolean verifcaByHash(String[] texto, HashEncadeado1 he, int m){        
+    public boolean verifcaByHash(String[] texto, HashEncadeado he, int m){        
         List<String> list; //Irá guardar frases que foram iguais.
         int testeJuncoes;
         int j = 0;

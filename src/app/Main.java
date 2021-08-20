@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Random;
 import rbtree.RedBlackTree;
 import avltree.AVL_Functions;
-import hash.HashEncadeado1;
+import hash.HashEncadeado;
 import java.util.Scanner;
 
 /*
@@ -31,7 +31,7 @@ public class Main {
     private static Scanner leitor = new Scanner(System.in);
     private static final String alfabeto = "ABCDEFGHIJKLMNOPRSTUVXWYZ";
 
-    protected static int leInteiro() {
+    protected static int lerInteiro() {
         int x = leitor.nextInt();
         leitor.nextLine();
         return x;
@@ -52,48 +52,50 @@ public class Main {
         int esc = 1, tamHash = 0;
         while (esc > 0) {
             System.out.println("1 - Primeira Questão\n2 - Questão Plágio\n");
-            esc = leInteiro();
+            esc = lerInteiro();
             switch (esc) {
                 case 1:
+                    Long tempoInsert= Integer.toUnsignedLong(0);
                     int chave, value, quantValue;
                     System.out.println("Tamanho hash?");
-                    tamHash = leInteiro();
-                    System.out.println("Quantos valores?");
-                    quantValue = leInteiro();
-                    HashEncadeado1 hashInt = new HashEncadeado1<Integer, Integer>(tamHash, new Integer[tamHash], new Integer[tamHash]);
-                    int i = 0;
-                    Long timeBefore = System.currentTimeMillis();
-                    Long tempoInsert= Integer.toUnsignedLong(0), tempoDepoisINSERT=Integer.toUnsignedLong(0);
-                    for (i = 0; i < quantValue ; i++) { 
-                        chave = tamHash;
-                        while (chave >= tamHash || chave < 0){
-                            System.out.println("CHAVE:");
-                            chave = leInteiro();
-                        }
-                        System.out.println("Valor");
-                        value = leInteiro();
-                        tempoInsert += System.currentTimeMillis();
-                        hashInt.insert(chave, value);
-                        tempoDepoisINSERT += System.currentTimeMillis();                        
-                        //hashInt.insert(gerador.nextInt(tamHash-1), Math.abs(gerador.nextInt(1000)));                        
-                    }                    
-                    Long timeAfter = System.currentTimeMillis();
-                    System.out.println("Tempo médio da operação de inserção SEM processos de I/O: "+(tempoDepoisINSERT-tempoInsert)/tamHash);
-                    System.out.println("Tempo Médio da operação de inserção COM processos de I/O: " + (timeAfter - timeBefore));
-            
-                    // -------------------- FIND ALL -----------------------------
-                    System.out.println("Digite uma chave para busca");
-                    chave = leInteiro(); 
-                    if (hashInt != null) {
-                        System.out.print("Chave: " + chave + " ->");
-                        System.out.println(hashInt.findAll(chave)); //Busca de uma chave digitada pelo usuário.
-                    } else {
-                        System.out.println("\nHash não inicializado");
+                    tamHash = lerInteiro();
+                    HashEncadeado hashInt = new HashEncadeado<Integer, Integer>(tamHash, new Integer[tamHash], new Integer[tamHash]);
+                                       
+                    while(esc > 0){
+                        System.out.println("0 - Voltar");
+                        System.out.println("1 - Inserir Valores");
+                        System.out.println("2 - Buscar");
+                        System.out.println("3 - Mostrar Hash");
+                        esc = lerInteiro();
+                        switch(esc){
+                            case 0:
+                                break;
+                            case 1:
+                                System.out.println("CHAVE:");
+                                chave = lerInteiro();
+                                System.out.println("Valor:");
+                                value = lerInteiro();
+                                tempoInsert = System.currentTimeMillis();
+                                hashInt.insert(chave, value);
+                                System.out.println("Tempo Médio da operação de inserção COM processos de I/O: " + (System.currentTimeMillis() - tempoInsert));
+                                break;
+                            case 2:
+                                System.out.println("Digite uma chave para busca");
+                                chave = lerInteiro(); 
+                                if (hashInt != null) {
+                                    System.out.print("Chave: " + chave + " ->");
+                                    System.out.println(hashInt.findAll(chave)); //Busca de uma chave digitada pelo usuário.
+                                } else {
+                                    System.out.println("\nHash não inicializado");
+                                }
+                                break;
+                            case 3:
+                                System.out.println("--------------- Mostrando Tudo ---- ");
+                                hashInt.show();
+                                break;
+                        }    
                     }
-
-                    System.out.println("--------------- Mostrando Tudo ---- ");
-                    hashInt.show();
-
+                    esc = 1;
                     break;
                 case 2:
                     int escSegunda = 1;
@@ -104,10 +106,10 @@ public class Main {
                      depoisVerificacao;
                     while (escSegunda > 0) {
                         System.out.println("1 - Por Hash\n2- AVL\n3- RB");
-                        escSegunda = leInteiro();
+                        escSegunda = lerInteiro();
                         String nomeArquivo = "";                        
                         System.out.println("Quantas palavras para verificar?");
-                        int n = leInteiro();
+                        int n = lerInteiro();
                         System.out.println("Nome do arquivo para verificar mais o formato");
                         nomeArquivo = leString();
                         if (nomeArquivo.contains(".txt") == false) { //Caso o usuário digite o nome sem o formato.                           
@@ -116,10 +118,10 @@ public class Main {
                         System.out.println(nomeArquivo);
                         switch (escSegunda) {
                             case 1:
-                                HashEncadeado1 hashPlagio;
+                                HashEncadeado hashPlagio;
                                 for (int j = 0; j < arquivosBase.size(); j++) {
                                     System.out.println("---------------------------");
-                                    hashPlagio = new HashEncadeado1(5000, new String[5000], new String[5000]); //Criação do Hash                                     
+                                    hashPlagio = new HashEncadeado(5000, new String[5000], new String[5000]); //Criação do Hash                                     
                                     antesCarregamento = System.currentTimeMillis();
                                     verificador.carregaArquivoHash("Arquivos para verificar/"+nomeArquivo, hashPlagio, n); //Hash vai ser preenchido com cadeias de N palavras;
                                     depoisCarregamento = System.currentTimeMillis();

@@ -14,7 +14,7 @@ import java.util.LinkedHashSet;
  * O que faz: Implementação de funções relacionadas a estrutura Hash Encadeado .
  * Revisado em: ...
  */
-public class HashEncadeado1 <T, T1>{
+public class HashEncadeado <T, T1>{
     private int buckets;
     private T[] keys;
     private HashDuplo[] values;
@@ -29,7 +29,7 @@ public class HashEncadeado1 <T, T1>{
             values: Valores que serão associados a uma chave. 
        * Retorno: String de tamanho N.
      */
-    public <T1> HashEncadeado1(int b, T[] keys, T1[] values){
+    public <T1> HashEncadeado(int b, T[] keys, T1[] values){
         this.buckets = b;
         this.keys = keys;
         this.values = new HashDuplo[this.buckets];
@@ -62,6 +62,7 @@ public class HashEncadeado1 <T, T1>{
        * Retorno: Nenhum.
     */
     public void insert(T key, T value){
+         System.out.println(this.buckets);
         int index = hash(key); //Calcula index
         while(this.keys[index] != null){
             if(this.keys[index].equals(key)){
