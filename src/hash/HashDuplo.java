@@ -79,10 +79,11 @@ public class HashDuplo <T>{
     
     public List<T> getAll(T key){
         int i=1, index, cont = 0;
+        
         List<T> list = new LinkedList<>(); 
         if (key != null){
-            index = hash1(key)%this.keys.length;
-            while(this.keys[index] != null){
+            index = hash1(key)%this.keys.length;          
+            while(this.keys[index] != null){                
                 list.add(this.keys[index]);
                 index = (hash1(key) + i*hash2(key))%this.keys.length;
                 index = Math.abs(index);
@@ -91,7 +92,9 @@ public class HashDuplo <T>{
                 if(cont == this.size)
                     return list;
             }
+            
         }
+        
         return list;
     }    
 }

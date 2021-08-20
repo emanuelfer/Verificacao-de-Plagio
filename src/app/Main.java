@@ -55,7 +55,7 @@ public class Main {
             esc = lerInteiro();
             switch (esc) {
                 case 1:
-                    long tempoInsert, tempoFim;
+                    long tempoInsert, tempoFim, tempoBusca = Integer.toUnsignedLong(0), tempoFimBusca;
                     int chave, value;
                     System.out.println("Tamanho hash?");
                     tamHash = lerInteiro();
@@ -86,7 +86,10 @@ public class Main {
                                 chave = lerInteiro(); 
                                 if (hashInt != null) {
                                     System.out.print("Chave: " + chave + " ->");
+                                    tempoBusca = System.currentTimeMillis();
                                     System.out.println(hashInt.findAll(chave)); //Busca de uma chave digitada pelo usuário.
+                                    tempoFimBusca = System.currentTimeMillis();
+                                    System.out.println("Tempo do processo de busca: "+ (tempoBusca-tempoFimBusca));
                                 } else {
                                     System.out.println("\nHash não inicializado");
                                 }
@@ -97,12 +100,12 @@ public class Main {
                                 break;
                              
                             case 4:
-                                tamHash = gerador.nextInt(10000);    
-                                System.out.println("Tamanho do hash: " + tamHash);
-                                hashInt = new HashEncadeado<Integer, Integer>(tamHash, new Integer[tamHash], new Integer[tamHash]);
+                                //tamHash = gerador.nextInt(10000);    
+                                //System.out.println("Tamanho do hash: " + tamHash);
+                                //hashInt = new HashEncadeado<Integer, Integer>(tamHash, new Integer[tamHash], new Integer[tamHash]);
                                 tempoInsert = System.currentTimeMillis();
                                 for(int i = 0; i< tamHash*10;i++){
-                                    hashInt.insert(gerador.nextInt(10*tamHash), gerador.nextInt(10*tamHash));
+                                    hashInt.insert(gerador.nextInt(tamHash), gerador.nextInt(10*tamHash));
                                 }
                                 tempoFim = System.currentTimeMillis();
                                 System.out.println("O tempo inserção foi: " + (tempoFim-tempoInsert));
