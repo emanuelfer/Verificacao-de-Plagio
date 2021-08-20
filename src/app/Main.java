@@ -29,7 +29,7 @@ import java.util.Scanner;
 public class Main {
 
     private static Scanner leitor = new Scanner(System.in);
-    private static final String alfabeto = "ABCDEFGHIJKLMNOPRSTUVXWYZ";
+    private static final String ALFABETO = "ABCDEFGHIJKLMNOPRSTUVXWYZ";
 
     protected static int lerInteiro() {
         int x = leitor.nextInt();
@@ -79,7 +79,7 @@ public class Main {
                                 tempoInsert = System.currentTimeMillis();
                                 hashInt.insert(chave, value);
                                 tempoFim = System.currentTimeMillis();
-                                System.out.println("Tempo Médio da operação de inserção COM processos de I/O: " + (tempoFim - tempoInsert));
+                                System.out.println("Tempo Médio da operação de inserção COM processos de I/O: " + (tempoFim - tempoInsert) + " ms");
                                 break;
                             case 2:
                                 System.out.println("Digite uma chave para busca");
@@ -105,8 +105,7 @@ public class Main {
                                     hashInt.insert(gerador.nextInt(10*tamHash), gerador.nextInt(10*tamHash));
                                 }
                                 tempoFim = System.currentTimeMillis();
-                                System.out.println("O tempo inserção foi: " + (tempoFim-tempoInsert));
-
+                                System.out.println("O tempo inserção foi: " + (tempoFim-tempoInsert) + " ms");
                                 break;
                         }    
                     }
@@ -154,9 +153,8 @@ public class Main {
                                     } else {
                                         System.out.println("Não há plágio no arquivo dados" + (j + 1) + ".txt");
                                     }
-                                    System.out.println("Tempo gasto para carregar arquivo na estrutura: " + (depoisCarregamento - antesCarregamento));
-                                    System.out.println("Tempo gasto para verificar plágio usando a estrutura: " + (depoisVerificacao - antesVerificacao));
-                                    hashPlagio = null;
+                                    System.out.println("Tempo gasto para carregar arquivo na estrutura: " + (depoisCarregamento - antesCarregamento) +" ms");
+                                    System.out.println("Tempo gasto para verificar plágio usando a estrutura: " + (depoisVerificacao - antesVerificacao) +" ms");
                                 }
                                 break;
                             case 2:
@@ -176,9 +174,8 @@ public class Main {
                                     } else {
                                         System.out.println("Não há plágio no arquivo dados" + (j + 1) + ".txt");
                                     }
-                                    System.out.println("Tempo gasto para carregar arquivo na estrutura: " + (depoisCarregamento - antesCarregamento));
-                                    System.out.println("Tempo gasto para verificar plágio usando a estrutura: " + (depoisVerificacao - antesVerificacao));
-                                    avlTreePlagio = null;
+                                    System.out.println("Tempo gasto para carregar arquivo na estrutura: " + (depoisCarregamento - antesCarregamento) +" ms");
+                                    System.out.println("Tempo gasto para verificar plágio usando a estrutura: " + (depoisVerificacao - antesVerificacao) +" ms");
                                 }
                                 break;
                             case 3:
@@ -197,9 +194,8 @@ public class Main {
                                     } else {
                                         System.out.println("Não há plágio no arquivo dados" + (j + 1) + ".txt");
                                     }
-                                    System.out.println("Tempo gasto para carregar arquivo na estrutura: " + (depoisCarregamento - antesCarregamento));
-                                    System.out.println("Tempo gasto para verificar plágio usando a estrutura: " + (depoisVerificacao - antesVerificacao));
-                                    rbTree = null;
+                                    System.out.println("Tempo gasto para carregar arquivo na estrutura: " + (depoisCarregamento - antesCarregamento) +" ms");
+                                    System.out.println("Tempo gasto para verificar plágio usando a estrutura: " + (depoisVerificacao - antesVerificacao) +" ms");
                                 }
 
                                 break;
@@ -229,10 +225,10 @@ public class Main {
         for (int i = 0; i < n; i++) {
 
             int index
-                    = (int) (alfabeto.length()
+                    = (int) (ALFABETO.length()
                     * Math.random());
 
-            sb.append(alfabeto.charAt(index));
+            sb.append(ALFABETO.charAt(index));
         }
 
         return sb.toString();
