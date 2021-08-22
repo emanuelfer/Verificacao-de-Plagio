@@ -55,13 +55,14 @@ public class Main {
             esc = lerInteiro();
             switch (esc) {
                 case 1:
-                    long tempoInsert, tempoFim;
+                    long tempoInsert  , tempoFim, tempoBusca , tempoFimBusca;
                     int chave, value;
                     System.out.println("Tamanho hash?");
                     tamHash = lerInteiro();
                     HashEncadeado hashInt = new HashEncadeado<Integer, Integer>(tamHash, new Integer[tamHash], new Integer[tamHash]);
                                        
                     while(esc > 0){
+                        tempoInsert = tempoFim = tempoBusca = tempoFimBusca = 0;
                         System.out.println("0 - Voltar");
                         System.out.println("1 - Inserir Valores");
                         System.out.println("2 - Buscar");
@@ -80,13 +81,17 @@ public class Main {
                                 hashInt.insert(chave, value);
                                 tempoFim = System.currentTimeMillis();
                                 System.out.println("Tempo Médio da operação de inserção COM processos de I/O: " + (tempoFim - tempoInsert) + " ms");
+                                System.out.println("Tempo Médio da operação de inserção SEM contar processos de I/O: " + (tempoFim - tempoInsert) +" ms");
                                 break;
                             case 2:
                                 System.out.println("Digite uma chave para busca");
                                 chave = lerInteiro(); 
                                 if (hashInt != null) {
                                     System.out.print("Chave: " + chave + " ->");
+                                    tempoBusca = System.currentTimeMillis();
                                     System.out.println(hashInt.findAll(chave)); //Busca de uma chave digitada pelo usuário.
+                                    tempoFimBusca = System.currentTimeMillis();
+                                    System.out.println("Tempo do processo de busca: "+ (tempoFimBusca-tempoBusca) +" ms");
                                 } else {
                                     System.out.println("\nHash não inicializado");
                                 }
@@ -96,13 +101,10 @@ public class Main {
                                 hashInt.show();
                                 break;
                              
-                            case 4:
-                                tamHash = gerador.nextInt(10000);    
-                                System.out.println("Tamanho do hash: " + tamHash);
-                                hashInt = new HashEncadeado<Integer, Integer>(tamHash, new Integer[tamHash], new Integer[tamHash]);
+                            case 4:                                
                                 tempoInsert = System.currentTimeMillis();
                                 for(int i = 0; i< tamHash*10;i++){
-                                    hashInt.insert(gerador.nextInt(10*tamHash), gerador.nextInt(10*tamHash));
+                                    hashInt.insert(gerador.nextInt(tamHash), gerador.nextInt(10*tamHash));
                                 }
                                 tempoFim = System.currentTimeMillis();
                                 System.out.println("O tempo inserção foi: " + (tempoFim-tempoInsert) + " ms");
@@ -115,9 +117,9 @@ public class Main {
                     int escSegunda = 1;
                     VerificaPlagio verificador = new VerificaPlagio(); //Objeto responsável pela chamada de métodos de verificação e leitura de arquivo
                     Long antesCarregamento,
-                     depoisCarregamento,
-                     antesVerificacao,
-                     depoisVerificacao;
+                    depoisCarregamento,
+                    antesVerificacao,
+                    depoisVerificacao;
                     while (escSegunda > 0) {
                         System.out.println("0 - Voltar");
                         System.out.println("1 - Por Hash\n2- AVL\n3- RB");
@@ -138,13 +140,12 @@ public class Main {
                             case 0:
                                 break;
                             case 1:
-                                HashEncadeado hashPlagio;
+                                HashEncadeado hashPlagio = new HashEncadeado(5000, new String[5000], new String[5000]); //Criação do Hash                                                                         ;
+                                antesCarregamento = System.currentTimeMillis();
+                                verificador.carregaArquivoHash("Arquivos para verificar/"+nomeArquivo, hashPlagio, n); //Hash vai ser preenchido com cadeias de N palavras;
+                                depoisCarregamento = System.currentTimeMillis();
                                 for (int j = 0; j < arquivosBase.size(); j++) {
-                                    System.out.println("---------------------------");
-                                    hashPlagio = new HashEncadeado(5000, new String[5000], new String[5000]); //Criação do Hash                                     
-                                    antesCarregamento = System.currentTimeMillis();
-                                    verificador.carregaArquivoHash("Arquivos para verificar/"+nomeArquivo, hashPlagio, n); //Hash vai ser preenchido com cadeias de N palavras;
-                                    depoisCarregamento = System.currentTimeMillis();
+                                    System.out.println("---------------------------");                                   
                                     antesVerificacao = System.currentTimeMillis();
                                     boolean ehPlagioHash = verificador.verifcaByHash(arquivosBase.get(j), hashPlagio, n); //Verifica se há plágio                                    
                                     depoisVerificacao = System.currentTimeMillis();
@@ -155,7 +156,10 @@ public class Main {
                                     }
                                     System.out.println("Tempo gasto para carregar arquivo na estrutura: " + (depoisCarregamento - antesCarregamento) +" ms");
                                     System.out.println("Tempo gasto para verificar plágio usando a estrutura: " + (depoisVerificacao - antesVerificacao) +" ms");
+                                    System.out.println("Tempo gasto para carregar arquivo na estrutura: " + (depoisCarregamento - antesCarregamento)+" ms");
+                                    System.out.println("Tempo gasto para verificar plágio usando a estrutura: " + (depoisVerificacao - antesVerificacao)+" ms");                                    
                                 }
+                                hashPlagio = null;
                                 break;
                             case 2:
                                 AVL_Functions avlTreePlagio;

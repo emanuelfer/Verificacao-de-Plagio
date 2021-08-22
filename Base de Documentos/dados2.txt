@@ -1,19 +1,288 @@
-Nesta terça-feira (17), é comemorado o Dia Nacional do Patrimônio Histórico, data que celebra os bens culturais do país que foram reconhecidos devido sua importância cultural para a sociedade. O Maranhão possui alguns destes patrimônios que através da sua história e riqueza, ajudam a contar parte da história do país.
-São Luís, capital do Estado do Maranhão é reconhecida desde 1997, como cidade Patrimônio Cultural Mundial pela Organização das Nações Unidas para a Educação, a Ciência e a Cultura (UNESCO).
-A cidade recebeu o reconhecimento por conseguir conservar uma tradição cultural rica e diversificada, onde se destacam milhares de edificações distribuídas pelo seu traçado de cidade colonial portuguesa do século 18.
-A rica coleção de azulejos presentes nas paredes dos casarões coloniais também ajudam a contar a história da cidade que, em 2021, completa 409 de fundação.
-O município de Alcântara, cidade localizada a 30 km de São Luís, também guarda registros de um importante período histórico com seu patrimônio artístico, paisagístico e arqueológico. Em 1948, Alcântara recebeu o título de cidade Monumento Nacional, por meio do decreto federal.
-Algumas manifestações que fazem parte da tradição cultural do Maranhão também receberam atenções e são consideradas Patrimônios Culturais. Em destaque, o Bumba meu boi e o Tambor de Crioula, que através da música e dança, representam a cultura dos maranhenses.
-O Complexo Cultural do Bumba meu boi do Maranhão foi inscrito no Livro de Registro de Celebrações, pelo Iphan, em 2011. Ele, é considerado o mais importante manifestação da cultura popular do Maranhão.
-Durante a brincadeira, articulam-se várias formas de expressão e saberes, e se confundem fé, festa e arte, em uma mistura de devoção, crenças, mitos, alegria, cores, dança, música, teatro e artesanato, entre outros elementos.
-As apresentações do Bumba meu boi acontecem em arraiais distribuídos pelo centro e bairros da cidade. Os dois grandes encontros de grupos são a alvorada na Capela de São Pedro (na Madre Deus) e o desfile da Av. São Marçal (no João Paulo), no mês de junho, durante o mesmo período das festas juninas.
-Em dezembro de 2019, a Organização das Nações Unidas para a Educação, a Ciência e a Cultura (Unesco) reconheceu o Bumba Meu Boi do Maranhão como Patrimônio Cultural Imaterial da Humanidade, tornando-se o sexto bem brasileiro a integrar a lista internacional.
-O Tambor de Crioula também é considerado um Patrimônio Histórico importante. A manifestação é uma forma de expressão de matriz afro-brasileira que envolve dança circular, canto e percussão de tambores.
-O bem imaterial foi inscrito no livro das Formas de Expressão, em 2007, sendo realizado ao ar livre, nas praças, no interior de terreiros, ou associado a outros eventos e manifestações, é realizado sem local específico ou calendário pré-fixado e praticado especialmente em louvor a São Benedito.
-O Dia do Nacional do Patrimônio Histórico Cultural foi instituído na data de nascimento de Rodrigo Melo Franco de Andrade, advogado, historiador, jornalista e primeiro presidente do Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN).
-Patrimônio cultural é tudo aquilo que possui importância histórica e cultural para um país ou uma pequena comunidade, como a arquitetura, festas, danças, músicas, manifestações populares, artes, culinária, entre outros.
-Ao G1, o superintendente do Iphan no Maranhão, Maurício Itapary, destacou a importância desta data e as ações realizadas para proteger e promover os bens culturais do Maranhão (veja o vídeo acima).
-"Aqui no Maranhão nós temos muito o que comemorar, o Governo Federal através do Iphan tem feito grandes investimentos para preservação, proteção e para a promoção do nosso patrimônio cultural", destacou.
-O Brasil possui 48 bens culturais imateriais registrados, 1.262 bens tombados – entre eles 83 conjuntos urbanos e onze terreiros de matrizes africanas –, além de 25.892 sítios arqueológicos registrados. Os conjuntos urbanos tombados contam com cerca de 40 mil imóveis.
-
-
+O que é Engenharia de Software? É uma das disciplinas da Informática, ou da Ciência da
+Computação? É um sinônimo de um destes termos? Em termos mais práticos: um profissional formado
+em Informática ou Ciência da Computação é automaticamente um Engenheiro de Software? 
+Nos verbetes acima, fica a Informática definida como uma ciência, cujo assunto é o processamento de
+informação através de máquinas. A ciência, por sua vez, tem como foco a acumulação do
+conhecimento, através do método científico, geralmente baseado em experimentos e observações.
+A definição de Engenharia é conexa, porém distinta. Analisemos cada uma de suas partes, tentando
+interpretá-las em termos da Engenharia de Software, e reordenando-as para fins explicativos.
+Arte – Na acepção aqui usada, a “capacidade que tem o homem de pôr em prática uma idéia,
+valendo-se da faculdade de dominar a matéria”, ou “a utilização de tal capacidade, com vistas
+a um resultado que pode ser obtido por meios diferentes”. O produto da engenharia é matéria
+dominada: idéia que se torna material através do emprego das faculdades humanas. Na
+Engenharia de Software, a matéria dominada consiste em máquinas de processamento da
+informação configuradas e programadas.
+Atendimento das necessidades humanas – O foco da engenharia é a necessidade humana.
+Nisto, ela tem escopo bem diverso da ciência. O conhecimento é certamente uma necessidade
+humana, mas uma entre várias outras de uma hierarquia1
+: alimentação, moradia, segurança,
+afeição, auto-estima... Todo produto de engenharia se justifica através da satisfação de uma
+destas necessidades; portanto, da geração de algo que tenha valor para alguém. A Engenharia
+de Software procura gerar valor através dos recursos de processamento de informação.
+1
+ Os especialistas em desenvolvimento humano usam a escala de necessidades de Maslow [Hitt85]. 
+10
+Conhecimentos científicos – Parte dos métodos da engenharia provém da ciência; parte dos
+métodos da Engenharia de Software provém da Ciência da Computação.
+Conhecimentos empíricos – Outra parte dos métodos da engenharia provém da experiência
+prática, e não apenas da pesquisa científica. Em muitos casos, a ciência intervém
+posteriormente para explicar, modelar e generalizar o que a prática descobriu. Na Engenharia
+de Software, muitas práticas são adotadas porque funcionam, mesmo quando ainda carecem de
+fundamentação teórica satisfatória.
+Habilitações específicas – Toda engenharia é uma atividade realizada por pessoas. Para isto,
+estas pessoas têm de ter habilitações específicas. A Engenharia de Software possui uma
+conjunto de habilitações específicas, ou disciplinas, que se relaciona com o conjunto das
+disciplinas da Ciência da Computação, mas não se confunde com elas.
+Recursos naturais – Toda engenharia parte de recursos naturais; algumas ciências, por
+contraste, como a Lógica e a Matemática, têm base inteiramente abstrata. Os recursos naturais
+da Engenharia de Software são as máquinas de tratamento da informação. A Ciência da
+Computação se ocupa de abstrações como os algoritmos e as estruturas de dados; a Engenharia
+de Software usa estas abstrações, desde que sejam realizáveis na prática, através da tecnologia
+existente em determinado momento.
+Formas adequadas – Para satisfazer às necessidades humanas, os recursos naturais devem ser
+convertidos em formas adequadas. Na Engenharia de Software, estas formas são os programas
+de computador. Comparado com outros engenheiros, o engenheiro de software tem liberdade
+extrema na criação de formas. Entretanto, só uma ínfima fração das formas possíveis atende ao
+critério de utilidade.
+Dispositivos e estruturas – O engenheiro reúne dispositivos em estruturas capazes de
+satisfazer uma necessidade humana. A criação de estruturas é essencial para que se extraia uma
+função útil do conjunto de dispositivos. O desafio do engenheiro de software é escolher e
+montar as estruturas de grande complexidade que a programação dos computadores permite
+realizar.
+Processos – A engenharia segue processos, que são “maneiras pelas quais se realiza uma
+operação, segundo determinadas normas”. O método da engenharia se baseia na ação
+sistemática, e não na improvisação. A noção de processo será também a espinha dorsal deste
+livro.
+Em suma, a Engenharia de Software não se confunde com a Ciência da Computação, e nem é uma
+disciplina desta, tal como a Engenharia Metalúrgica não é uma disciplina da Física dos Metais, nem a
+Engenharia Elétrica é uma disciplina da Física da Eletricidade. Como toda engenharia, a engenharia de
+software usa resultados da ciência, e fornece problemas para estudo desta; mas são vocações
+profissionais completamente distintas, tão distintas quanto as vocações do engenheiro e do físico, do
+médico e do biólogo, do político e do cientista político.
+1.2 Sistemas de informática
+As máquinas de tratamento de informação são organizadas em estruturas úteis, formando os sistemas
+de informática. Várias definições de sistema são aqui pertinentes.
+1. Conjunto de elementos, materiais ou ideais, entre os quais se possa encontrar ou definir
+alguma relação.
+2. Disposição das partes ou dos elementos de um todo, coordenados entre si, e que funcionam
+como estrutura organizada. 
+Manual do Engenheiro de Software
+11
+3. Reunião de elementos naturais da mesma espécie, que constituem um conjunto intimamente
+relacionado.
+O software é a parte programável de um sistema de informática. Ele é um elemento central: realiza
+estruturas complexas e flexíveis que trazem funções, utilidade e valor ao sistema. Mas outros
+componentes são indispensáveis: as plataformas de hardware, os recursos de comunicação de
+informação, os documentos de diversas naturezas, as bases de dados e até os procedimentos manuais
+que se integram aos automatizados.
+Este livro trata apenas dos componentes de software, por limitação de escopo. O engenheiro de
+software deverá ter em mente, no entanto, que o valor de um sistema depende da qualidade de cada um
+de seus componentes. Um sistema pode ter excelentes algoritmos codificados em seu software, e ser de
+péssimo desempenho por defeito de desenho de seu hardware, rede ou banco de dados. Cada um destes
+elementos pode pôr a perder a confiabilidade e a usabilidade do sistema. 
+Na prática, o engenheiro de software será chamado com freqüência a resolver questões pertinentes aos
+outros componentes do sistema, ou, no mínimo, encontrar quem as resolva. Alguma proficiência nas
+respectivas disciplinas lhe será necessária. Não trataremos delas neste livro, a não ser tangencialmente,
+quando necessário.
+2 Produtos
+2.1 Problemas
+Muitas pessoas, inclusive dirigentes de empresa, percebem o computador como problema, e não como
+solução. Muitos aceitam como fato da vida que os sistemas de informática:
+não façam o que deveriam fazer;
+sejam caros;
+sejam entregues tarde demais;
+sejam de baixa qualidade:
+cheios de defeitos;
+difíceis de usar; 
+12
+lentos etc.
+A tecnologia só resolve problemas quando é usada por pessoas qualificadas, dentro de processos
+adequados. Os sistemas de informática são os produtos da tecnologia de tratamento da informação. Os
+problemas que ocorrem com sistemas de informática podem ter várias causas.
+Podem ser fruto de deficiência de qualificação das pessoas que os operam. Isto pode decorrer
+de falta de treinamento, de dificuldade de uso do próprio sistema, ou de muitos outros fatores
+relacionados com pessoas.
+Podem originar-se de processos de negócio inadequados. Por processo de negócio entendemos
+o processo que faz parte da área de aplicação, onde, tipicamente, alguns procedimentos são
+executados por pessoas e outros são automatizados através do computador. Por exemplo, sacar
+dinheiro de um banco pode ser feito por dois processos diferentes: na "boca do caixa", ou
+através do equipamento conhecido como caixa eletrônico. O segundo processo é mais
+automatizado que o primeiro.
+Podem também ser causados por deficiências de tecnologia, ou seja, do próprio sistema de
+informática. Neste livro, trataremos apenas desta classe de problemas.
+2.2 Produção
+2.2.1 Ciclos de vida
+A Engenharia de Software se preocupa com o software enquanto produto. Estão fora de seu escopo
+programas que são feitos unicamente para diversão do programador. Estão fora de seu escopo também
+pequenos programas descartáveis, feitos por alguém exclusivamente como meio para resolver um
+problema, e que não serão utilizados por outros.
+Chamaremos de cliente a uma pessoa física ou jurídica que contrata a execução de um projeto, ou a
+um seu representante autorizado, com poder de aceitação de propostas e produtos. A pessoa que
+efetivamente usará um produto será chamada de usuário. Um usuário pode ser o próprio cliente, um
+funcionário de uma organização cliente, ou mesmo não ser relacionado diretamente com o cliente. Por
+exemplo, quando se produz software de prateleira, que será vendido no mercado aberto, é útil
+considerar como cliente, por exemplo, um departamento de marketing da organização produtora.
+Como todo produto industrial, o software tem um ciclo de vida:
+ele é concebido a partir da percepção de uma necessidade;
+desenvolvido, transformando-se em um conjunto de itens entregue a um cliente;
+entra em operação, sendo usado dentro de um algum processo de negócio, e sujeito a
+atividades de manutenção, quando necessário;
+é retirado de operação, ao final de sua vida útil.
+Cada fase do ciclo de vida tem divisões e subdivisões, que serão exploradas ao longo deste livro. É
+interessante observar, na Tabela 1, que a Codificação, que representa a escrita final de um programa
+em forma inteligível para um computador, é apenas uma pequena parte do ciclo de vida. Para a maioria
+das pessoas, inclusive muitos profissionais da informática, esta parece ser a única tarefa de um
+programador, ou seja, um produtor de software. 
+2.2.2 Projetos
+Normalmente, o desenvolvimento de software é feito dentro de um projeto. Todo projeto tem uma
+data de início, uma data de fim, uma equipe (da qual faz parte um responsável, que chamaremos de
+gerente do projeto) e outros recursos. Um projeto representa a execução de um processo.
+Quando um processo é bem definido, ele definirá subdivisões que permitam avaliar o progresso de um
+projeto, e corrigir seus rumos quando acontecerem problemas. Estas subdivisões são chamadas de
+fases, atividades ou iterações; posteriormente, usaremos estas palavras com significados técnicos
+específicos.
+As subdivisões devem ser terminadas por marcos, isto é, pontos que representam estados
+significativos do projeto. Geralmente os marcos são associados a resultados concretos: documentos,
+modelos ou porções do produto, que podem fazer parte do conjunto prometido aos clientes, ou ter
+apenas utilização interna ao projeto. O próprio produto é um resultado associado ao marco de
+conclusão do projeto.
+2.3 Requisitos
+2.3.1 Características
+O valor de um produto vem de suas características. Tratando-se de software, costuma-se dividir as
+características em:
+características funcionais, que representam os comportamentos que um programa ou sistema
+deve apresentar diante de certas ações de seus usuários;
+características não funcionais, que quantificam determinados aspectos do comportamento.
+Por exemplo, em um terminal de caixa automático, os tipos de transações bancárias suportadas são
+características funcionais. A facilidade de uso, o tempo de resposta e o tempo médio entre falhas são
+características não funcionais.
+Os requisitos são as características que definem os critérios de aceitação de um produto. A engenharia
+tem por objetivo colocar nos produtos as características que são requisitos. Outras características
+podem aparecer acidentalmente, mas os produtos não devem ser desenhados para incluí-las, já que,
+normalmente, toda característica extra significa um custo adicional de desenho ou de fabricação. 
+14
+2.3.2 Especificação dos requisitos
+Os requisitos podem ser dos seguintes tipos.
+Os requisitos explícitos são aqueles descritos em um documento que arrola os requisitos de um
+produto, ou seja, um documento de especificação de requisitos.
+Os requisitos normativos são aqueles que decorrem de leis, regulamentos, padrões e outros
+tipos de normas a que o tipo de produto deve obedecer.
+Os requisitos implícitos são expectativas dos clientes e usuários, que são cobradas por estes,
+embora não documentadas.
+Requisitos implícitos são indesejáveis, porque, não sendo documentados, provavelmente não serão
+considerados no desenho do produto. O resultado será um produto que, embora satisfazendo aos
+compromissos formais, que são os requisitos explícitos e normativos, não atenderá às necessidades do
+consumidor.
+Mesmo requisitos documentados podem apresentar problemas. Uma especificação de requisitos podem
+conter requisitos incompletos, inconsistentes ou ambíguos. Alguns destes problemas decorrem da
+natureza da própria linguagem natural, que normalmente é usada para expressá-los. Outros decorrem
+de técnicas deficientes de elaboração dos requisitos.
+2.3.3 Engenharia dos requisitos
+Um dos problemas básicos da engenharia de software é o levantamento e documentação dos requisitos
+dos produtos de software. Quando este levantamento é bem feito, os requisitos implícitos são
+minimizados. Quando a documentação é bem feita, os requisitos documentados têm maiores chances
+de serem corretamente entendidos pelos desenvolvedores. Algumas técnicas de análise dos requisitos
+ajudam a produzir especificações mais precisas e inteligíveis. O conjunto das técnicas de
+levantamento, documentação e análise forma a engenharia dos requisitos, que é uma das disciplinas
+da engenharia de software.
+Infelizmente, muitos clientes não entendem a necessidade de especificações de requisitos. Pior ainda,
+muitos desenvolvedores de software e, pior de tudo, muitos gerentes também não. É uma situação tão
+absurda quanto querer resolver um problema sem escrever o respectivo enunciado: existe grande risco
+de resolver-se o problema errado. Por outro lado, é possível também a existência de requisitos que não
+correspondam a necessidades reais dos clientes e usuários. Esta falha de engenharia de requisitos
+indica que não foi feita uma análise do valor de cada requisito, do ponto de vista da missão que o
+produto deve cumprir.
+Cabe aos engenheiros de software insistir sempre na elaboração de uma boa especificação de
+requisitos. Faz parte do trabalho deles o convencimento dos clientes e usuários de que:
+boas especificações de requisitos são indispensáveis;
+elas não representam custos supérfluos, mas investimentos necessários, que se pagam com
+altos juros;
+a participação dos usuários na engenharia de requisitos é fundamental para que as necessidades
+deles sejam corretamente atendidas pelo produto;
+uma boa especificação de requisitos custa tempo e dinheiro;
+a ausência de uma boa especificação de requisitos custa muito mais tempo e dinheiro.
+2.4.2 Planejamento de projetos
+Uma coisa é exigir dos engenheiros de software estimativas de prazos, e cobrar o cumprimento dos
+prazos prometidos. Clientes e gerentes podem e devem fazê-lo. Outra coisa é pressioná-los para que
+façam promessas que não podem ser cumpridas. Uma frase comum desta cultura é: "Não me interessa
+como você vai fazer, desde que entregue no prazo!". Na realidade, o cliente ou gerente deve, no seu
+próprio interesse, ter algum meio de checar se o cronograma e orçamento propostos são realistas; se
+preciso, recorrendo aos serviços uma terceira parte.
+A cultura do prazo político é ruim para todos. Para os desenvolvedores, ela significa estresse e má
+qualidade de vida. Para os gerentes, perda de credibilidade e prejuízos. E para os clientes, produtos de
+má qualidade e mais caros do que deveriam. Ainda por cima, entregues fora do prazo. 
+Manual do Engenheiro de Software
+17
+Para cumprir compromissos de prazos e custos, estes compromissos têm de ser assumidos com base
+em requisitos bem levantados, analisados e documentados. E os planos dos projetos têm de ser feitos
+com boas técnicas de estimativa e análise de tamanho, esforços, prazos e riscos. Estas técnicas
+pertencem à disciplina de planejamento de projetos, que faz parte da Engenharia de Software.
+2.4.3 Controle de projetos
+Todo plano comporta incertezas. Por exemplo, o tamanho de certas partes do produto pode ser
+estimado grosseiramente a partir dos requisitos, mas o desenho detalhado das partes do produto
+permite refinar as estimativas, e o tamanho correto só é exatamente conhecido no final dos projetos. A
+produtividade dos desenvolvedores pode ser estimada com base em projetos anteriores da organização,
+mas é afetada por muitas variações, que dependem de pessoas, processos e tecnologia. E riscos
+previstos e não previstos podem se materializar.
+ Ao longo de um projeto, os gerentes têm de enfrentar problemas e tentar controlar variáveis que
+afetem o cumprimento de seus compromissos. Algumas vezes, os problemas podem ser resolvidos
+através de contratação e remanejamento de pessoal, ou de uma melhoria de ferramentas. Outras vezes
+não existe maneira viável de contornar os problemas, e é necessário renegociar requisitos, prazos ou
+custos. Para renegociar, é preciso replanejar, atualizando as estimativas para levar em conta os novos
+dados.
+A disciplina complementar do planejamento de projetos é o controle dos projetos. Ele compreende:
+o acompanhamento do progresso dos projetos, comparando-se o planejado com o realizado;
+a busca de alternativas para contornar problemas surgidos na execução dos projetos;
+o replanejamento dos projetos, quando não é possível manter os planos anteriores dentro de
+um grau razoável de variação;
+a renegociação dos compromissos assumidos, envolvendo todas as partes interessadas.
+2.5 Qualidade
+2.5.1 Conformidade com requisitos
+Entenderemos como qualidade de um produto o seu grau de conformidade com os respectivos
+requisitos. De acordo com esta definição de qualidade, por exemplo, um carro popular pode ser de boa
+qualidade, e um carro de luxo pode ser de má qualidade. O que decide a qualidade é comparação com
+os respectivos requisitos: o confronto entre a promessa e a realização de cada produto.
+Geralmente a qualidade de um produto decorre diretamente da qualidade do processo utilizado na
+produção dele. Note-se que importa aqui a qualidade do processo efetivamente utilizado, não do
+"processo oficial", que pode eventualmente estar descrito nos manuais da organização. Muitas vezes os
+processos oficiais não são seguidos na prática, por deficiência de ferramentas, por falta de qualificação
+das pessoas, ou porque pressões de prazo levam os gerentes dos projetos a eliminar etapas relacionadas
+com controle da qualidade.
+Em um produto de software de má qualidade, muitos requisitos não são atendidos completamente. As
+deficiências de conformidade com os requisitos se manifestam de várias maneiras. Em alguns casos,
+certas funções não são executadas corretamente sob certas condições, ou para certos valores de
+entradas. Em outros casos, o produto tem desempenho insuficiente, ou é difícil de usar.
+Cada requisito não atendido é um defeito. No mundo informático, criou-se a usança de chamar de
+“bugs” os defeitos de software. Assim, erros técnicos adquirem conotação menos negativa, que lembra
+simpáticos insetos de desenho animado. E o nome ajuda a esquecer que estes defeitos foram causados
+por erro de uma falível pessoa, e que cada defeito tem responsáveis bem precisos. 
+18
+Note-se que defeitos incluem situações de falta de conformidade com requisitos explícitos, normativos
+e implícitos. Os defeitos associados a requisitos implícitos são os mais difíceis de tratar. Eles levam a
+desentendimentos sem solução entre o fornecedor e o cliente do produto. Além disto, como estes
+requisitos, por definição, não são documentados, é bastante provável que eles não tenham sido
+considerados no desenho do produto, o que tornará a correção dos defeitos particularmente trabalhosa.
+2.5.2 Garantia da qualidade
+Um erro conceitual comum é imaginar que é possível trocar prazo, e talvez custo, por qualidade. Na
+realidade, é possível, em muitos casos, reduzir prazos e custos através do redução dos requisitos de um
+produto. A qualidade, por outro lado, é conseqüência dos processos, das pessoas e da tecnologia. A
+relação entre a qualidade do produto e cada um desses fatores é complexa. Por isto, é muito mais difícil
+controlar o grau de qualidade do produto do que controlar os requisitos.
+Em todas as fases do desenvolvimento de software as pessoas introduzem defeitos. Eles decorrem de
+limitações humanas: erros lógicos, erros de interpretação, desconhecimento de técnicas, falta de
+atenção, ou falta de motivação. Em todo bom processo existem atividades de garantia da qualidade,
+tais como revisões, testes e auditorias. Estas atividades removem parte dos defeitos introduzidos.
+Quando atividades de controle da qualidade são cortadas, parte dos defeitos deixa de ser removida em
+um ponto do projeto.
+Defeitos que não são removidos precocemente acabam sendo detectados depois. Quanto mais tarde um
+defeito é corrigido, mais cara é a sua correção, por várias razões que serão discutidas posteriormente.
+O pior caso acontece quando o defeito chega ao produto final. Neste caso, ele só será removido através
+de uma operação de manutenção. Esta é a forma mais cara de remoção de defeitos. Em certos casos,
+como acontece em sistemas de missão crítica, defeitos de software podem trazer prejuízos irreparáveis.
+A Figura 4 mostra que o tempo de desenvolvimento é geralmente reduzido com o aumento da
+qualidade do processo. Isto acontece porque um processo melhor é mais eficiente na detecção e
+eliminação precoce dos defeitos. Em geral, o tempo gasto com a correção precoce é mais do que
+compensado pela eliminação do tempo que seria gasto com a correção tardia. O prazo aumenta apenas
+quando se quer reduzir o nível de defeitos do produto final a um parâmetro mais rigoroso em relação
+ao estado da arte. Em certos casos, isto se justifica pelo caráter crítico do sistema: por exemplo, quando
+defeitos podem colocar pessoas em perigo, ou causar prejuízos materiais vultosos.

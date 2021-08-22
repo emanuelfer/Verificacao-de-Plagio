@@ -1,19 +1,300 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus felis at massa euismod fringilla. Suspendisse mollis, eros ac egestas vulputate, diam purus pharetra quam, ut tincidunt nibh diam eu metus. Nam quis sollicitudin tellus. Duis id metus et nisl aliquam convallis. Ut tempus turpis nec cursus blandit. Pellentesque non blandit lorem, nec molestie nibh. Aliquam rhoncus odio quis tincidunt venenatis. Pellentesque et turpis in magna vestibulum commodo. Morbi semper pulvinar ligula, at efficitur metus tristique sit amet. Integer imperdiet, nisl sed faucibus aliquet, dolor sapien porta risus, in consequat nisl quam sit amet nibh.
-
-Nunc quis sem enim. Morbi sed congue nulla, id suscipit ligula. Vivamus lacinia non est id condimentum. Morbi molestie mauris at sagittis tristique. Nunc ac purus egestas, maximus erat a, feugiat velit. Praesent eget posuere felis. Etiam molestie, quam at sagittis mollis, est lectus aliquet nunc, et faucibus eros tellus eu massa. Quisque mattis, leo in vulputate scelerisque, nulla elit hendrerit turpis, a viverra nulla velit nec erat. Nulla lobortis tincidunt porttitor. Nulla facilisis suscipit nisi id tincidunt. Cras sit amet ullamcorper turpis, at fermentum erat. Fusce ultrices maximus diam at venenatis. Proin ut aliquam ex, sagittis commodo velit. Quisque interdum nec nisl vitae interdum. Nullam feugiat elementum dictum. Etiam porta est justo, sit amet porta ante sollicitudin at.
-
-Quisque in mauris et diam molestie hendrerit. Vivamus nec malesuada lectus, et varius ipsum. Donec felis orci, ultricies at libero quis, elementum molestie risus. Morbi luctus, lacus at congue placerat, urna enim sollicitudin quam, finibus tempus magna lectus nec nisi. Fusce ac elit lacinia, pretium orci a, tempor risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus tempus leo ac sapien accumsan, id vestibulum neque mattis. In dignissim ligula eget libero auctor porttitor. Sed pulvinar tristique ipsum. Curabitur eu mauris non nulla hendrerit varius et a eros. Donec pellentesque scelerisque arcu, ac commodo magna scelerisque nec. Integer molestie laoreet nunc ac faucibus. Nullam eros lectus, laoreet vitae ultrices eu, malesuada non enim.
-
-Sed facilisis porta purus eu interdum. Vestibulum id nisi urna. Sed lacinia libero facilisis neque auctor, eget placerat turpis ultricies. Integer nunc leo, mollis nec felis id, dapibus sollicitudin lorem. Curabitur congue cursus ornare. Sed rhoncus ac lacus sed sagittis. Pellentesque quis elit eu quam viverra gravida sit amet in risus. Duis vitae imperdiet neque, quis accumsan risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed varius sem at sapien euismod fermentum. Sed volutpat massa vitae est feugiat fermentum.
-
-Donec sit amet varius nibh, eget cursus erat. In at odio tincidunt metus mattis interdum. Aliquam non commodo odio, vitae hendrerit purus. Nulla tincidunt lorem sodales, dictum magna vitae, porttitor urna. Nulla vehicula, odio in placerat auctor, est tortor fermentum eros, ultricies ornare neque justo et magna. In eleifend volutpat orci, vitae consequat tortor imperdiet et. Sed ac egestas elit, eu tempus ante. Nullam varius non turpis non molestie. Nam varius elementum ligula eu ornare. Aliquam nisi turpis, aliquam sed odio nec, sollicitudin cursus quam. Maecenas cursus augue at ipsum volutpat tempor et ut urna. Sed lectus nibh, lobortis ac condimentum ut, fermentum a justo. Donec vitae mi vel nunc semper consequat. Sed quam lorem, auctor vulputate metus vulputate, tempus sagittis erat.
-
-Morbi ut lectus lorem. Duis dictum viverra efficitur. Aliquam lacinia malesuada mauris sit amet interdum. Vestibulum gravida ornare nulla ut dictum. Nullam elementum tellus vel lobortis posuere. Duis eu eros malesuada, lobortis augue eu, fermentum ante. Duis nulla ex, euismod eget dui id, dignissim euismod libero. Nullam vitae tortor porttitor, semper erat at, hendrerit elit. Suspendisse ante ante, sagittis molestie enim ac, auctor tempus mi. Pellentesque fermentum ante eu ligula interdum, sit amet tempus massa vestibulum. Fusce augue metus, malesuada quis risus a, fringilla mollis ligula. Donec posuere urna arcu. Curabitur dolor ante, dignissim non tristique at, eleifend ut ex. Curabitur eu ipsum ut magna aliquet lacinia ut id lectus.
-
-Sed tempor enim quis diam pellentesque, vel tempus turpis eleifend. Nam pellentesque, lectus vel rhoncus molestie, ligula dolor elementum augue, id sagittis ex ligula at enim. Donec lorem odio, vestibulum sit amet eros a, varius imperdiet diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis scelerisque vel ipsum eget luctus. In tristique augue tortor, ut ornare metus posuere eget. Aenean quis luctus felis.
-
-Sed eu nisl dictum, congue massa eu, tempus metus. Aenean quis rutrum ante. Proin mollis metus ut ipsum pulvinar, at suscipit nisi rhoncus. Fusce id condimentum nunc, in porta eros. Sed dignissim nisl non est eleifend, sed congue ante fringilla. Maecenas dolor lacus, sodales suscipit erat nec, porta tempor sapien. Aliquam erat volutpat. Fusce auctor placerat mattis. Suspendisse varius nisi sem, eget ullamcorper urna lobortis eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec vitae orci urna. Curabitur molestie eros quam. Aenean ut risus fermentum, sagittis elit eu, vehicula erat. Morbi euismod nibh quis est fermentum pretium.
-
-Nam euismod vitae nulla nec scelerisque. Nulla sed elit magna. Nam venenatis elit odio, a elementum mauris maximus in. Curabitur ligula odio, suscipit in nulla sit amet, consectetur volutpat mauris. Donec mattis, sapien quis pharetra maximus, justo turpis dictum orci, eu fermentum turpis ex sit amet ipsum. Nam turpis ex, fringilla nec bibendum vehicula, euismod eu mauris. Etiam et varius est. Quisque sagittis aliquet pulvinar. Mauris sit amet metus vulputate, varius felis eget, vulputate nunc. Suspendisse ullamcorper massa id turpis cursus varius.
-
-Maecenas augue tortor, mollis in urna id, dignissim tincidunt nulla. Praesent ac augue lobortis, consectetur elit id, sollicitudin dui. Phasellus efficitur cursus tortor, sit amet iaculis nulla sagittis ut. Nam tempus urna quis lorem placerat, nec aliquam nisl cursus. Proin sed metus sit amet nunc fringilla viverra malesuada at nisi. Praesent accumsan velit eu ullamcorper venenatis. Sed lobortis sollicitudin odio ut pellentesque. Quisque feugiat, augue vitae convallis rhoncus, eros sem viverra erat, ut faucibus sapien sem ut elit. Vestibulum quis tellus et eros vehicula efficitur vel eu felis. Pellentesque neque purus, feugiat eget orci eu, fermentum pretium tortor.
+A pesquisa é a atividade nuclear da Ciência. Ela possibilita uma aproximação
+e um entendimento da realidade a investigar. A pesquisa é um processo permanentemente inacabado. Processa-se por meio de aproximações sucessivas da realidade,
+fornecendo-nos subsídios para uma intervenção no real.
+A pesquisa científica é o resultado de um inquérito ou exame minucioso, realizado com o objetivo de resolver um problema, recorrendo a procedimentos científicos. Lehfeld (1991) refere-se à pesquisa como sendo a inquisição, o procedimento
+sistemático e intensivo, que tem por objetivo descobrir e interpretar os fatos que
+estão inseridos em uma determinada realidade.
+OBJETIVOS
+Os objetivos desta Unidade são:
+(1) identificar os diferentes tipos de pesquisa quanto à sua abordagem, sua natureza,
+seus objetivos e seus procedimentos;
+(2) selecionar a modalidade de pesquisa adequada ao objeto de pesquisa.
+2.1 TIPOS DE PESQUISA
+2.1.1 Quanto à abordagem
+2.1.1.1 PESQUISA QUALITATIVA
+A pesquisa qualitativa não se preocupa com representatividade numérica,
+mas, sim, com o aprofundamento da compreensão de um grupo social, de uma organização, etc. Os pesquisadores que adotam a abordagem qualitativa opõem-se ao
+pressuposto que defende um modelo único de pesquisa para todas as ciências, já que
+as ciências sociais têm sua especificidade, o que pressupõe uma metodologia própria.
+Assim, os pesquisadores qualitativos recusam o modelo positivista aplicado ao estudo
+da vida social, uma vez que o pesquisador não pode fazer julgamentos nem permitir que
+seus preconceitos e crenças contaminem a pesquisa (GOLDENBERG, 1997, p. 34).
+34
+EAD
+Os pesquisadores que utilizam os métodos qualitativos buscam explicar o porquê das coisas, exprimindo o que convém ser feito, mas não quantificam os valores e
+as trocas simbólicas nem se submetem à prova de fatos, pois os dados analisados são
+não-métricos (suscitados e de interação) e se valem de diferentes abordagens.
+Na pesquisa qualitativa, o cientista é ao mesmo tempo o sujeito e o objeto de
+suas pesquisas. O desenvolvimento da pesquisa é imprevisível. O conhecimento do
+pesquisador é parcial e limitado. O objetivo da amostra é de produzir informações
+aprofundadas e ilustrativas: seja ela pequena ou grande, o que importa é que ela seja
+capaz de produzir novas informações (DESLAURIERS, 1991, p. 58).
+A pesquisa qualitativa preocupa-se, portanto, com aspectos da realidade que
+não podem ser quantificados, centrando-se na compreensão e explicação da dinâmica das relações sociais. Para Minayo (2001), a pesquisa qualitativa trabalha com o
+universo de significados, motivos, aspirações, crenças, valores e atitudes, o que corresponde a um espaço mais profundo das relações, dos processos e dos fenômenos
+que não podem ser reduzidos à operacionalização de variáveis. Aplicada inicialmente
+em estudos de Antropologia e Sociologia, como contraponto à pesquisa quantitativa
+dominante, tem alargado seu campo de atuação a áreas como a Psicologia e a Educação. A pesquisa qualitativa é criticada por seu empirismo, pela subjetividade e pelo
+envolvimento emocional do pesquisador (MINAYO, 2001, p. 14).
+As características da pesquisa qualitativa são: objetivação do fenômeno; hierarquização das ações de descrever, compreender, explicar, precisão das relações entre
+o global e o local em determinado fenômeno; observância das diferenças entre o
+mundo social e o mundo natural; respeito ao caráter interativo entre os objetivos
+buscados pelos investigadores, suas orientações teóricas e seus dados empíricos; busca de resultados os mais fidedignos possíveis; oposição ao pressuposto que defende
+um modelo único de pesquisa para todas as ciências.
+Entretanto, o pesquisador deve estar atento para alguns limites e riscos da pesquisa qualitativa, tais como: excessiva confiança no investigador como instrumento
+de coleta de dados; risco de que a reflexão exaustiva acerca das notas de campo possa
+representar uma tentativa de dar conta da totalidade do objeto estudado, além de
+controlar a influência do observador sobre o objeto de estudo; falta de detalhes sobre
+os processos através dos quais as conclusões foram alcançadas; falta de observância
+de aspectos diferentes sob enfoques diferentes; certeza do próprio pesquisador com
+relação a seus dados; sensação de dominar profundamente seu objeto de estudo; envolvimento do pesquisador na situação pesquisada, ou com os sujeitos pesquisados.
+35
+EAD
+2.1.1.2 PESQUISA QUANTITATIVA
+Esclarece Fonseca (2002, p. 20):
+Diferentemente da pesquisa qualitativa, os resultados da pesquisa
+quantitativa podem ser quantificados. Como as amostras geralmente
+são grandes e consideradas representativas da população, os resultados
+são tomados como se constituíssem um retrato real de toda a população alvo da pesquisa. A pesquisa quantitativa se centra na objetividade.
+Influenciada pelo positivismo, considera que a realidade só pode ser
+compreendida com base na análise de dados brutos, recolhidos com
+o auxílio de instrumentos padronizados e neutros. A pesquisa quantitativa recorre à linguagem matemática para descrever as causas de
+um fenômeno, as relações entre variáveis, etc. A utilização conjunta da
+pesquisa qualitativa e quantitativa permite recolher mais informações
+do que se poderia conseguir isoladamente.
+O quadro 1, abaixo, compara os principais aspectos da pesquisa qualitativa e
+da pesquisa quantitativa.
+A pesquisa quantitativa, que tem suas raízes no pensamento positivista lógico,
+tende a enfatizar o raciocínio dedutivo, as regras da lógica e os atributos mensuráveis
+da experiência humana. Por outro lado, a pesquisa qualitativa tende a salientar os
+aspectos dinâmicos, holísticos e individuais da experiência humana, para apreender
+a totalidade no contexto daqueles que estão vivenciando o fenômeno (POLIT, BECKER E HUNGLER, 2004, p. 201). O quadro 2 apresenta uma comparação entre
+o método quantitativo e o método qualitativo.A pesquisa quantitativa, que tem suas raízes no pensamento positivista lógico,
+tende a enfatizar o raciocínio dedutivo, as regras da lógica e os atributos mensuráveis
+da experiência humana. Por outro lado, a pesquisa qualitativa tende a salientar os
+aspectos dinâmicos, holísticos e individuais da experiência humana, para apreender
+a totalidade no contexto daqueles que estão vivenciando o fenômeno (POLIT, BECKER E HUNGLER, 2004, p. 201). O quadro 2 apresenta uma comparação entre
+o método quantitativo e o método qualitativo.
+2.1.2.1 PESQUISA BÁSICA
+Objetiva gerar conhecimentos novos, úteis para o avanço da Ciência, sem aplicação prática prevista. Envolve verdades e interesses universais.
+37
+......EAD
+2.1.2.2 PESQUISA APLICADA
+Objetiva gerar conhecimentos para aplicação prática, dirigidos à solução de
+problemas específicos. Envolve verdades e interesses locais.
+2.1.3 Quanto aos objetivos
+Para Gil (2007), com base nos objetivos, é possível classificar as pesquisas em
+três grupos:
+2.1.3.1 PESQUISA EXPLORATÓRIA
+Este tipo de pesquisa tem como objetivo proporcionar maior familiaridade
+com o problema, com vistas a torná-lo mais explícito ou a construir hipóteses. A
+grande maioria dessas pesquisas envolve: (a) levantamento bibliográfico; (b) entrevistas com pessoas que tiveram experiências práticas com o problema pesquisado; e
+(c) análise de exemplos que estimulem a compreensão (GIL, 2007).
+Essas pesquisas podem ser classificadas como: pesquisa bibliográfica e estudo
+de caso (GIL, 2007).
+2.1.3.2 PESQUISA DESCRITIVA
+A pesquisa descritiva exige do investigador uma série de informações sobre o
+que deseja pesquisar. Esse tipo de estudo pretende descrever os fatos e fenômenos de
+determinada realidade (TRIVIÑOS, 1987).
+São exemplos de pesquisa descritiva: estudos de caso, análise documental, pesquisa ex-post-facto.
+Para Triviños (1987, p. 112), os estudos descritivos podem ser criticados porque pode existir uma descrição exata dos fenômenos e dos fatos. Estes fogem da
+possibilidade de verificação através da observação. Ainda para o autor, às vezes não
+existe por parte do investigador um exame crítico das informações, e os resultados
+podem ser equivocados; e as técnicas de coleta de dados, como questionários, escalas
+e entrevistas, podem ser subjetivas, apenas quantificáveis, gerando imprecisão.
+2.1.3.3 PESQUISA EXPLICATIVA
+Este tipo de pesquisa preocupa-se em identificar os fatores que determinam ou
+que contribuem para a ocorrência dos fenômenos (GIL, 2007). Ou seja, este tipo de
+pesquisa explica o porquê das coisas através dos resultados oferecidos. Segundo Gil
+(2007, p. 43), uma pesquisa explicativa pode ser a continuação de outra descritiva,
+posto que a identificação de fatores que determinam um fenômeno exige que este
+esteja suficientemente descrito e detalhado.
+38
+......EAD
+Pesquisas desse tipo podem ser classificadas como experimentais e ex-postfacto (GIL, 2007).
+2.1.4 Quanto aos procedimentos
+De acordo com Fonseca (2002), a pesquisa possibilita uma aproximação e um
+entendimento da realidade a investigar, como um processo permanentemente inacabado. Ela se processa através de aproximações sucessivas da realidade, fornecendo
+subsídios para uma intervenção no real.
+Segundo este autor, a pesquisa científica é o resultado de um inquérito ou
+exame minucioso, realizado com o objetivo de resolver um problema, recorrendo a
+procedimentos científicos. Investiga-se uma pessoa ou grupo capacitado (sujeito da
+investigação), abordando um aspecto da realidade (objeto da investigação), no sentido de comprovar experimentalmente hipóteses (investigação experimental), ou para
+descrevê-la (investigação descritiva), ou para explorá-la (investigação exploratória).
+Para se desenvolver uma pesquisa, é indispensável selecionar o método de pesquisa a utilizar. De acordo com as características da pesquisa, poderão ser escolhidas
+diferentes modalidades de pesquisa, sendo possível aliar o qualitativo ao quantitativo.
+2.1.4.1 PESQUISA EXPERIMENTAL
+O estudo experimental segue um planejamento rigoroso. As etapas de pesquisa
+iniciam pela formulação exata do problema e das hipóteses, que delimitam as variáveis precisas e controladas que atuam no fenômeno estudado (TRIVIÑOS, 1987).
+Para Gil (2007), a pesquisa experimental consiste em determinar um objeto de
+estudo, selecionar as variáveis que seriam capazes de influenciá-lo, definir as formas
+de controle e de observação dos efeitos que a variável produz no objeto.
+Já segundo Fonseca (2002, p. 38):
+A pesquisa experimental seleciona grupos de assuntos coincidentes,
+submete-os a tratamentos diferentes, verificando as variáveis estranhas
+e checando se as diferenças observadas nas respostas são estatisticamente significantes. [...] Os efeitos observados são relacionados com
+as variações nos estímulos, pois o propósito da pesquisa experimental
+é apreender as relações de causa e efeito ao eliminar explicações conflitantes das descobertas realizadas.
+Sendo assim, a elaboração de instrumentos para a coleta de dados deve ser
+submetida a testes para assegurar sua eficácia em medir aquilo que a pesquisa se
+propõe a medir.
+A pesquisa experimental pode ser desenvolvida em laboratório (onde o meio
+ambiente criado é artificial) ou no campo (onde são criadas as condições de manipulação dos sujeitos nas próprias organizações, comunidades ou grupos).
+39
+......EAD
+Para Fonseca (2002), as duas modalidades de pesquisa mais comuns são:
+pesquisas experimentais apenas com dois grupos homogêneos, denominados
+experimental e de controle. Aplicado um estímulo ao grupo experimental, no
+final comparam-se os dois grupos para avaliar as alterações.
+pesquisas experimentais antes-depois com um único grupo, definido previamente em função de suas características e geralmente reduzido.
+2.1.4.2 PESQUISA BIBLIOGRÁFICA
+A pesquisa bibliográfica é feita a partir do levantamento de referências
+teóricas já analisadas, e publicadas por meios escritos e eletrônicos,
+como livros, artigos científicos, páginas de web sites. Qualquer trabalho
+científico inicia-se com uma pesquisa bibliográfica, que permite ao pesquisador conhecer o que já se estudou sobre o assunto. Existem porém
+pesquisas científicas que se baseiam unicamente na pesquisa bibliográfica, procurando referências teóricas publicadas com o objetivo de recolher informações ou conhecimentos prévios sobre o problema a respeito
+do qual se procura a resposta (FONSECA, 2002, p. 32).
+Para Gil (2007, p. 44), os exemplos mais característicos desse tipo de pesquisa
+são sobre investigações sobre ideologias ou aquelas que se propõem à análise das
+diversas posições acerca de um problema.
+2.1.4.3 PESQUISA DOCUMENTAL
+A pesquisa documental trilha os mesmos caminhos da pesquisa bibliográfica, não sendo fácil por vezes distingui-las. A pesquisa bibliográfica utiliza fontes constituídas por material já elaborado, constituído
+basicamente por livros e artigos científicos localizados em bibliotecas.
+A pesquisa documental recorre a fontes mais diversificadas e dispersas, sem tratamento analítico, tais como: tabelas estatísticas, jornais,
+revistas, relatórios, documentos oficiais, cartas, filmes, fotografias,
+pinturas, tapeçarias, relatórios de empresas, vídeos de programas de
+televisão, etc. (FONSECA, 2002, p. 32).
+2.1.4.4 PESQUISA DE CAMPO
+A pesquisa de campo caracteriza-se pelas investigações em que, além da pesquisa bibliográfica e/ou documental, se realiza coleta de dados junto a pessoas, com
+o recurso de diferentes tipos de pesquisa (pesquisa ex-post-facto, pesquisa-ação, pesquisa participante, etc.) (FONSECA, 2002).
+40
+......EAD
+2.1.4.5 PESQUISA EX-POST-FACTO
+A pesquisa ex-post-facto tem por objetivo investigar possíveis relações
+de causa e efeito entre um determinado fato identificado pelo pesquisador e um fenômeno que ocorre posteriormente. A principal característica deste tipo de pesquisa é o fato de os dados serem coletados
+após a ocorrência dos eventos.
+A pesquisa ex-post-facto é utilizada quando há impossibilidade de aplicação da pesquisa experimental, pelo fato de nem sempre ser possível
+manipular as variáveis necessárias para o estudo da causa e do seu
+efeito (FONSECA, 2002, p. 32).
+Como exemplo desse tipo de pesquisa, pode-se citar um estudo sobre a evasão escolar, quando se tenta analisar suas causas. Num estudo experimental, seria
+o inverso, tomando-se primeiramente um grupo de alunos a quem seria dado um
+determinado tratamento, e observando-se depois o índice de evasão.
+2.1.4.6 PESQUISA DE LEVANTAMENTO
+Fonseca (2002) aponta que este tipo de pesquisa é utilizado em estudos exploratórios e descritivos, o levantamento pode ser de dois tipos: levantamento de uma
+amostra ou levantamento de uma população (também designado censo).
+Esclarece o autor (2002, p. 33):
+O Censo populacional constituía única fonte de informação sobre a
+situação de vida da população nos municípios e localidades. Os censos produzem informações imprescindíveis para a definição de políticas públicas estaduais e municipais e para a tomada de decisões
+de investimentos, sejam eles provenientes da iniciativa privada ou de
+qualquer nível de governo. Foram recenseados todos os moradores
+em domicílios particulares (permanentes e improvisados) e coletivos,
+na data de referência. Através de pesquisas mensais do comércio, da
+indústria e da agricultura, é possível recolher informações sobre o seu
+desempenho. A coleta de dados realiza-se em ambos os casos através
+de questionários ou entrevistas.
+Entre as vantagens dos levantamentos, temos o conhecimento direto da realidade, economia e rapidez, e obtenção de dados agrupados em tabelas que possibilitam uma riqueza na análise estatística.
+Os estudos descritivos são os que mais se adéquam aos levantamentos. Exemplos são os estudos de opiniões e atitudes (GIL, 2007, p. 52). 
+41
+......EAD
+2.1.4.7 PESQUISA COM SURVEY
+É a pesquisa que busca informação diretamente com um grupo de interesse a
+respeito dos dados que se deseja obter. Trata-se de um procedimento útil, especialmente em pesquisas exploratórias e descritivas (SANTOS, 1999).
+A pesquisa com survey pode ser referida como sendo a obtenção de dados ou
+informações sobre as características ou as opiniões de determinado grupo de pessoas,
+indicado como representante de uma população-alvo, utilizando um questionário
+como instrumento de pesquisa (FONSECA, 2002, p. 33).
+Nesse tipo de pesquisa, o respondente não é identificável, portanto o sigilo é
+garantido. São exemplos desse tipo de estudo as pesquisas de opinião sobre determinado atributo, a realização de um mapeamento geológico ou botânico.
+2.1.4.8 ESTUDO DE CASO
+Esta modalidade de pesquisa é amplamente usada nas ciências biomédicas e
+sociais (GIL, 2007, p. 54).
+Um estudo de caso pode ser caracterizado como um estudo de uma
+entidade bem definida como um programa, uma instituição, um sistema educativo, uma pessoa, ou uma unidade social. Visa conhecer em
+profundidade o como e o porquê de uma determinada situação que se
+supõe ser única em muitos aspectos, procurando descobrir o que há nela
+de mais essencial e característico. O pesquisador não pretende intervir
+sobre o objeto a ser estudado, mas revelá-lo tal como ele o percebe.
+O estudo de caso pode decorrer de acordo com uma perspectiva interpretativa, que procura compreender como é o mundo do ponto
+de vista dos participantes, ou uma perspectiva pragmática, que visa
+simplesmente apresentar uma perspectiva global, tanto quanto possível completa e coerente, do objeto de estudo do ponto de vista do
+investigador (FONSECA, 2002, p. 33).
+Para Alves-Mazzotti (2006, p. 640), os exemplos mais comuns para esse tipo
+de estudo são os que focalizam apenas uma unidade: um indivíduo (como os casos
+clínicos descritos por Freud), um pequeno grupo (como o estudo de Paul Willis sobre um grupo de rapazes da classe trabalhadora inglesa), uma instituição (como uma
+escola, um hospital), um programa (como o Bolsa Família), ou um evento (a eleição
+do diretor de uma escola).
+Ainda segundo a autora, podemos ter também estudos de casos múltiplos, nos
+quais vários estudos são conduzidos simultaneamente: vários indivíduos (como, por
+exemplo, professores alfabetizadores bem-sucedidos), várias instituições (como, por
+exemplo, diferentes escolas que estão desenvolvendo um mesmo projeto).
+42
+......EAD
+2.1.4.9 PESQUISA PARTICIPANTE
+Este tipo de pesquisa caracteriza-se pelo envolvimento e identificação do pesquisador com as pessoas investigadas.
+A pesquisa participante foi criada por Bronislaw Malinowski: para conhecer os nativos das ilhas Trobriand, ele foi se tornar um deles. Rompendo com a sociedade ocidental,
+montava sua tenda nas aldeias que desejava estudar, aprendia suas línguas e observava sua
+vida quotidiana (FONSECA, 2002).
+Exemplos de aplicação da pesquisa participante são o estabelecimento de programas
+públicos ou plataformas políticas e a determinação de ações básicas de grupos de trabalho.
+2.1.4.10 PESQUISA-AÇÃO
+Define Thiollent (1988):
+A pesquisa ação é um tipo de investigação social com base empírica
+que é concebida e realizada em estreita associação com uma ação ou
+com a resolução de um problema coletivo no qual os pesquisadores
+e os participantes representativos da situação ou do problema estão
+envolvidos de modo cooperativo ou participativo.
+Por sua vez, Fonseca (2002) precisa:
+A pesquisa-ação pressupõe uma participação planejada do pesquisador na situação problemática a ser investigada. O processo de pesquisa
+recorre a uma metodologia sistemática, no sentido de transformar as
+realidades observadas, a partir da sua compreensão, conhecimento e
+compromisso para a ação dos elementos envolvidos na pesquisa (p. 34).
+O objeto da pesquisa-ação é uma situação social situada em conjunto
+e não um conjunto de variáveis isoladas que se poderiam analisar independentemente do resto. Os dados recolhidos no decurso do trabalho
+não têm valor significativo em si, interessando enquanto elementos de
+um processo de mudança social. O investigador abandona o papel de
+observador em proveito de uma atitude participativa e de uma relação sujeito a sujeito com os outros parceiros. O pesquisador quando
+participa na ação traz consigo uma série de conhecimentos que serão
+o substrato para a realização da sua análise reflexiva sobre a realidade
+e os elementos que a integram. A reflexão sobre a prática implica em
+modificações no conhecimento do pesquisador (p. 35).
+Para Gil (2007, p. 55), a pesquisa-ação tem sido alvo de controvérsia devido ao
+envolvimento ativo do pesquisador e à ação por parte das pessoas ou grupos envolvidos no problema. Apesar das críticas, essa modalidade de pesquisa tem sido usada
+por pesquisadores identificados pelas ideologias reformistas e participativas.
+43
+......EAD
+2.1.4.11 PESQUISA ETNOGRÁFICA
+A pesquisa etnográfica pode ser entendida como o estudo de um grupo ou povo.
+As características específicas da pesquisa etnográfica são:
+o uso da observação participante, da entrevista intensiva e da análise de documentos;
+a interação entre pesquisador e objeto pesquisado;
+a flexibilidade para modificar os rumos da pesquisa;
+a ênfase no processo, e não nos resultados finais;
+a visão dos sujeitos pesquisados sobre suas experiências;
+a não intervenção do pesquisador sobre o ambiente pesquisado;
+a variação do período, que pode ser de semanas, de meses e até de anos;
+a coleta dos dados descritivos, transcritos literalmente para a utilização no relatório.
+Exemplos desse tipo são as pesquisas realizadas sobre os processos educativos,
+que analisam as relações entre escola, professor, aluno e sociedade, com o intuito de
+conhecer profundamente os diferentes problemas que sua interação desperta.
+2.1.4.12 PESQUISA ETNOMETODOLÓGICA
+O termo etnometodologia designa uma corrente da Sociologia americana, que
+surgiu na Califórnia no final da década de 1960, tendo como principal marco fundador a publicação do livro de Harold Garfinkel Studies in Ethnomethodology (Estudos
+sobre Etnometodologia), em 1967 (COULON, 1995, p. 7).
+O termo etnometodologia se refere nas suas raízes gregas às estratégias
+que as pessoas utilizam cotidianamente para viver. Tendo essa referência por norte, a pesquisa etnometodológica visa compreender como as
+pessoas constroem ou reconstroem a sua realidade social. Para a pesquisa etnometodológica, fenômenos sociais não determinam de fora a
+conduta humana. A conduta humana é o resultado da interação social
+que se produz continuamente através da sua prática quotidiana. Os
+seres humanos são capazes de ativamente definir e articular procedimentos, de acordo com as circunstâncias e as situações sociais em que
+estão implicados. A pesquisa etnometodológica analisa deste modo os
+procedimentos a que os indivíduos recorrem para concretizar as suas
+ações diárias (FONSECA, 2002, p. 36).
+Para estudar as ações dos sujeitos na vida quotidiana, a pesquisa etnometodológica baseia-se em uma multiplicidade de instrumentos, entre os quais podemos citar:
+a observação direta, a observação participante, entrevistas, estudos de relatórios e
+documentos administrativos, gravações em vídeo e áudio.
+44
+EAD
+Assim, a análise etnometodológica esclarece de que maneira as coisas vêm a ser
+como são nos grupos sociais, de que maneira cada grupo e cada membro apreende e dá
+sentido à realidade e por quais processos intersubjetivos a mediação da linguagem entre os
+grupos e seus lugares constrói a realidade social que afirmam (COULON, 1995, p. 90).

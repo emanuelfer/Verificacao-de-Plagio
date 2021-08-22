@@ -72,9 +72,11 @@ public class HashEncadeado <T, T1>{
             /*if (this.cont == this.keys.length){
                 return;
             }*/
-            if(cont++ == this.size)
+            if(cont++ == this.buckets){//se todas as posições tiverem ocupadas
                 return;
-        }                
+            }
+            System.out.println(cont);
+        }   
         this.keys[index] = key; //Seta chave        
         this.values[index].insert(key, value); //Chama a função de insert do HashDuplo daquela posição.        
         this.size++;
@@ -88,20 +90,22 @@ public class HashEncadeado <T, T1>{
             Key: Chave que será procurada no hash.             
        * Retorno: Lista com os valores.
     */
-    public List<T1> findAll(T key){
+    public List<T1> findAll(T key){        
         int index = hash(key), cont =1;
         while(this.keys[index] != null){
             if(this.keys[index].equals(key)){ //Encontrou a chave procurada
                 break;
             }
-            index = (index + 1)%this.buckets; //Senão continua procurando
+            index = (index + 1)%this.buckets; //Senão continua procurando            
             if(cont == this.buckets)
-                return null;
+                return null;   
+            
         }
         if(this.keys[index] == null )
             return null;
-        List<T1> retorno = new LinkedList<>();
-        List<T1> list = this.values[index].getAll(this.keys[index]); //Pega o hash com aquela chave
+        
+        List<T1> retorno = new LinkedList<>();        
+        List<T1> list = this.values[index].getAll(this.keys[index]); //Pega o hash com aquela chave                
         for(T1 s : list){
             retorno.add(s);
         }

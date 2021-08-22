@@ -1,7 +1,198 @@
-Tradicionalmente usados como meio de transporte, os cavalos cada vez mais prestam serviços para além das fazendas. A bola da vez é a importância deles para a saúde humana, em especial no combate à Covid-19.
-É que os cavalos podem fornecer anticorpos por meio de seu plasma para a produção de um soro que visa combater o coronavírus em pessoas infectadas pela doença. A técnica já é usada há anos na fabricação de medicamentos contra picadas de cobras, aranhas e abelhas.
-VEJA TAMBÉM: Abacate, café, caju... Série 'De onde vem foi o que eu como' mostra a origem de alimentos consumidos no país. Em destaque, o Bumba meu boi e o Tambor de Crioula, que através da música e dança, representam a cultura dos maranhenses.
-O Instituto Butantan, em São Paulo, lidera uma das iniciativas no país e já teve o seu soro liberado para testes em seres humanos pela Agência Nacional de Vigilância Sanitária (Anvisa).
-Já o Instituto Vital Brazil (IVB), no Rio de Janeiro, tem uma pesquisa semelhante, que ainda aguarda a aprovação da agência para testes em humanos, mas já tem planos de investigar se o soro é eficaz contra a variante Delta, diz Priscilla Palhano, presidente da entidade.
-Ela conta que, na fazenda do instituto, em Cachoeiras de Macacu (RJ), os cavalos recebem um tratamento diferenciado para conseguirem aguentar as retiradas semanais de sangue. Lembra um pouco os cuidados com o boi wagyu, que chegava a receber até massagem e cerveja no Japão.
-O Talibã voltou ao poder com uma ofensiva relâmpago, conquistando todas as províncias e a capital Cabul em menos de duas semanas.
+Os acidentes de trânsito (AT) e as variáveis que
+os circundam, tais como comportamento humano, tecnologia, engenharia de tráfego, entre
+outras, têm sido foco de preocupação social. A
+deficiência do sistema de transporte público e
+o aumento populacional, por exemplo, têm estimulado o uso do carro. A título de ilustração,
+no Município de Campinas, há 2,8 habitantes
+por veículo; cifra que indica um consumo de
+automóveis inferior só ao dos Estados Unidos e
+da França, onde este indicador é de 1,9 e 2,6
+respectivamente.
+Embora o Código Nacional de Trânsito, em vigor desde 1998, constitua um marco no controle
+dos acidentes, Taha (2001) alerta para a reversão
+da tendência decrescente dos AT observada no
+período imediatamente após sua implantação.
+A elevada mortalidade por AT representa um
+problema de saúde pública tanto no Brasil como em diversos países (Mello-Jorge et al., 1997;
+Yunes & Rajs, 1994), observando-se no Brasil 19
+óbitos/100.000 habitantes, no primeiro qüinqüênio dos anos 90. Os jovens, especialmente
+do sexo masculino, são o grupo com maior envolvimento em acidentes de trânsito fatais (Andrade & Jorge, 2000; Zhang et al., 2000).
+Os comportamentos no trânsito têm sido
+objeto de estudo, tanto no campo das ciências
+do comportamento humano quanto na saúde
+pública. No Reino Unido, analisaram-se 2.130
+acidentes, sendo 93% atribuídos a fatores humanos, 28% a fatores ambientais e 8,5% a defeitos no veículo (OMS, 1976).
+Parker et al. (1995) mostraram que a tendência para acidentes pode ser prognosticada
+a partir das infrações referidas pelo próprio motorista. Segundo West et al. (1993), a velocidade
+auto-referida também pode ser utilizada como
+bom indicador de envolvimento em acidentes.
+Sobre padrões comportamentais de risco,
+pode-se lembrar aspectos da teoria de personalidade proposta por Zuckerman (1988). Entre os traços de personalidade descritos, estão
+os denominados “busca de sensações fortes”
+(high sensation seeking), que se caracterizam
+pela preferência por novidades e pelo desejo
+de arriscar-se para consegui-las. Esses traços de
+personalidade estariam associados a altos níveis
+de testosterona e níveis menores de monoaminooxidase (MAO) no sistema nervoso central,
+sugerindo assim, uma base biológica para tais
+comportamentos. Para Arnett et al. (1997), o
+descaso e a agressividade seriam características dessa personalidade que, na sua pesquisa,
+mostraram-se associadas à alta velocidade e ao
+comportamento infrator no trânsito.
+No Canadá, Zhang et al. (2000) identificam
+que nos jovens a falta de experiência, o limitado poder de decisão, a velocidade excessiva e as
+infrações se associam a AT fatais. Marín & Queiroz (2000), numa revisão de diversos fatores que
+contribuem para a ocorrência de AT, abordam a
+importância do comportamento. Como o trânsito exige decisões rápidas, torna-se necessário
+considerar o estilo de conduzir, o modo pelo
+qual as pessoas fazem julgamentos e tomam decisões; entre elas, as de ultrapassar, mudar de
+pista e avançar sinal. O consumo de álcool é o
+fator mais associado a AT, pois dificulta a tomada de decisões e entorpece as habilidades psicomotoras. Nos jovens, a tomada de decisões é
+marcada pela impulsividade, ousadia e confiança excessiva em sua própria destreza.
+Acidentes de trânsito e as variáveis a eles
+associadas representam um problema social,
+havendo assim necessidade de ampliação de estudos, especialmente no campo comportamental e atitudinal. Com o intuito de contribuir na
+compreensão desta temática, o presente estudo, de natureza descritiva e exploratória, tem
+por objetivos descrever e comparar condutores
+jovens com e sem história de AT quanto a: (1) o
+perfil demográfico e sócio-econômico, (2) comportamentos no trânsito e (3) julgamentos e
+opiniões sobre o trânsito e reações emocionais
+quanto à velocidade e AT.
+Neste estudo se descrevem os dados referidos
+por 1.642 condutores, integrantes de uma amostra não aleatória de 2.116 estudantes de uma
+universidade pública, na cidade de Campinas,
+São Paulo. Os estudantes responderam a um
+questionário no período de matrícula do segundo semestre de 1996.
+Os critérios de inclusão foram: ser aluno da
+graduação e ter idade entre 18 e 25 anos. No semestre do estudo, matricularam-se na graduação, 7.260 alunos, sendo 57,8% homens e 42,2%
+mulheres. Foram distribuídos 2.850 questionários e 598 não foram devolvidos, o que representa 21% de “não-resposta” (NR). Houve 139
+(4,9%) questionários excluídos por não cumprir os critérios de inclusão. Dessa forma, os
+2.116 questionários representam 29,1% dos
+alunos matriculados desta faixa etária, sendo
+1.214 homens (57,4%) e 902 mulheres (42,6%).
+Embora seja uma amostra por conveniência,
+refletiu a distribuição dos sexos existente entre
+os alunos de graduação.
+O instrumento construído pelos autores é
+um questionário semi-estruturado, auto-aplicável, de 50 perguntas. Para descrição, agruparam-se as variáveis nos seguintes itens:
+Características demográficas gerais: idade,
+sexo, curso e ano de ingresso, cidade e estado
+de procedência e local de moradia.
+Características sócio-econômicas: renda
+mensal dos pais, fonte de renda do próprio estudante, montante dos gastos do estudante e
+número de carros da família.
+Experiência no trânsito: visa a definir tempo de exposição à direção (idade com que começou a dirigir carro, idade com que tirou carteira de motorista) e a freqüência com que essa
+atividade ocorre atualmente (acesso regular a
+carro da família, freqüência com que dirigiu
+carro nos últimos 6 meses e meio habitual de
+transporte para a universidade). Segundo este autor, a pesquisa científica é o resultado de um inquérito ou
+exame minucioso, realizado com o objetivo de resolver um problema, recorrendo a
+procedimentos científicos.
+Comportamentos no trânsito: visa a caracterizar os condutores segundo comportamentos tidos como recomendáveis para a prevenção de lesões graves (uso de cinto de segurança); comportamentos que denotam infração
+das normas do trânsito (multas, suborno a policiais); comportamentos que representam risco para a segurança de outros (brigas ou discussões, "rachas", velocidade média e máxima
+acima da permitida, ultrapassagens proibidas,
+passar sinal fechado, dirigir na contramão, dirigir pelo acostamento, dirigir após beber) e ceder às pressões do grupo ou sentir insegurança
+por causa dessas pressões quando dirige. A variável ter sido multado ou multa, embora requeira de atuação policial, tem implícito o fato
+de transgressão dos regulamentos do trânsito.
+Como as transgressões são decorrentes de comportamentos, incluímos a variável multas nesta categoria.
+Antecedentes de acidentes no trânsito: informações que visam a caracterizar o envolvimento em AT enquanto dirigia carro; esta é a
+variável dependente sobre a qual está centrada
+a análise dos dados. Integra também este item,
+a caracterização segundo a exposição a “acidentes enquanto acompanhante”, para identificar como este evento modificou as opiniões e
+os comportamentos no trânsito. Definiu-se acidente como qualquer impacto do veículo no
+trânsito, mesmo que sem ferimento de pessoas.
+Opiniões, julgamentos sobre o trânsito: pretende configurar um panorama sobre as crenças e opiniões dos jovens (soluções para melhorar o trânsito, agressividade como critério
+para ser bom motorista, carteira de habilitação
+com 16 anos, lei incisiva para infratores de trânsito, circunstâncias que contribuíram para os
+acidentes em que se envolveram).
+Reações emocionais e emoções: investiga
+sentimentos e emoções ao atingir alta velocidaCOMPORTAMENTOS NO TRÂNSITO 517
+de, significado de dispor de carro, repercussões
+pessoais de acidentes em que esteve envolvido,
+sentimentos suscitados pelo fato de pessoas
+conhecidas terem sofrido acidentes graves ou
+fatais.
+O instrumento foi distribuído em dez dias
+consecutivos a todos os estudantes que se encontravam na fila única para matricula. O tempo médio de resposta ao questionário foi de 20
+minutos. Dando cumprimento ao documento
+Diretrizes Éticas para Pesquisa em Sujeitos Humanos Financiadas pela Fundação de Amparo
+à Pesquisa do Estado de São Paulo, junto com o
+questionário foi entregue uma carta explicando a finalidade e o sigilo do estudo.
+O processamento dos dados constou de categorização de questões abertas e digitação das
+respostas codificadas em banco de dados criado no programa Epi Info.
+A análise dos dados inicia-se pela verificação univariada das perguntas fechadas, visando observar se o envolvimento ou não em AT
+como condutor de carro (variável dependente)
+difere segundo perfil demográfico, sócio-econômico, de exposição à direção e comportamentos no trânsito. Utilizando o Epi Info, foram calculadas: freqüências, x2, p, odds ratio (OR) e seu
+intervalo de confiança (IC) de 95%. De forma
+complementar, as categorias identificadas mediante perguntas abertas são descritas usandose freqüência e valor de p, visando ampliar a
+caracterização de acidentados e não acidentados. Finalmente, apenas as variáveis com diferença estatística significativa foram submetidas à análise multivariada; recorreu-se ao modelo de Regressão Logística, utilizando o programa SAS. Mediante o método de seleção Stepwise foram escolhidas as variáveis do modelo
+final. Embora num primeiro modelo incluíramse ambos os sexos, devido à maior freqüência
+de AT entre os homens, apresenta-se neste artigo apenas o modelo masculino.
+O perfil demográfico, sócio-econômico e de exposição à direção, difere segundo o envolvimento ou não em AT (Tabela 1). Destaca-se a
+maior freqüência de acidentes entre os homens. A maior proporção do grupo de 20 anos
+e mais entre os acidentados, explica-se pelo
+maior número de anos como motorista. Existem diferenças sócio-econômicas significativas
+entre condutores com historia de AT e sem esse antecedente. Os condutores com envolvimento em AT pertencem em maior proporção
+a famílias com renda elevada (igual ou superiora R$ 3.000,00) e provêm, em maior proporção,
+de famílias que têm 3 ou mais carros.
+Ainda, os acidentados têm maior acesso ao
+uso de carros da família e, especialmente, diferem no fato de usar carro próprio ou da família
+para deslocar-se à universidade. Também a freqüência com que o condutor dirige tem relação
+com a ocorrência de AT, pois a proporção de
+condutores habituais é maior entre os com antecedente de AT do que aqueles sem esse antecedente. As variáveis indicativas de exposição
+à direção apontam que é maior o risco de AT
+quando a exposição ao trânsito é maior (Tabela 1).
+O uso de cinto de segurança está amplamente difundido (82,8%). Não houve diferença
+na freqüência de AT entre os que usam cinto de
+segurança e os que não o usam (p = 0,458).
+A Tabela 2 apresenta as variáveis comportamentais que mostram diferenças significativas
+entre estudantes com antecedentes de acidentes e os sem esse evento. Os jovens com história de AT têm um perfil transgressor marcado.
+Todavia, mesmo entre os sem antecedentes de
+AT, há elevada freqüência de alguns comportamentos inadequados para o trânsito seguro (velocidade máxima, avançar sinal fechado e dirigir após beber).
+Quanto à velocidade máxima, destaca-se
+que 9,9% dos condutores referiram atingir velocidade de 160km/h ou mais. Utilizando a pergunta sobre “sensações referidas ao dirigir em
+alta velocidade”, observou-se que a freqüência
+de AT foi 12,3% para os que referem “não dirigir em alta velocidade”, e no restante das categorias, 34,5% (p menor 0,000). Os que valorizam dirigir em alta velocidade atribuem a este comportamento significados como liberdade, independência, adrenalina; esta categoria não apresentou diferença estatisticamente significativa
+entre acidentados e não-acidentados. Já entre
+os que não valorizam dirigir em alta velocidade, a subcategoria que refere “dirigir em alta
+velocidade por economia de tempo” teve 50%
+com antecedentes de AT (p menor 0,000).
+Motoristas de ambos os sexos com história
+de AT apresentam opiniões e julgamentos que
+os diferenciaram significativamente dos motoristas sem envolvimento. Estas opiniões foram:
+ser “contrário à legislação de trânsito mais rigorosa” (41,6% versus 12,1%) e acreditar que
+“motorista bom deve ser agressivo” (25,7% versus 18,2%).
+Os motoristas “não-favoráveis a uma legislação de trânsito mais rígida”, apresentaram freqüência significativamente mais elevada de alguns comportamentos transgressores quando
+comparados aos motoristas “favoráveis à legislação mais rígida”: velocidade média elevada
+(37,8% versus 29,8%; p = 0,030); velocidade máxima elevada (61,7% versus 46,7%; p menor 0,000);
+dirigir na contramão (6,7% versus 3,1%; p =
+0,008); dirigir pelo acostamento (17,2% versus
+11,9%; p = 0,030); participar de rachas (8,1%
+versus 4%; p = 0,007); ter sido multado (38,8%
+versus 26,3%; p menor 0,000) e dirigir logo após beber (50% versus 37,2%; p menor 0,000).
+Houve maior proporção de acidentados entre os que atribuem os AT a “fatores externos ao
+motorista” (problemas de engenharia de trânsito, excesso de veículos, pedestres) do que entre os que atribuem os AT a “fatores dependentes do motorista” (43% versus 29,2%; p = 0,008).
+Existem marcadas diferenças de gênero quantoaos comportamentos inadequados para a segurança no trânsito. Os homens referiram maior
+proporção de transgressões, sendo a razão entre as proporções de 4,9 para rachas; 2,5 para
+dirigir após beber; 2,4 para suborno; 2,3 para
+velocidade de 130km ou superior; 2,1 para
+dirigir no acostamento; 1,9 para multas; 1,7 para ultrapassagens proibidas; 1,1 para avançar
+sinal fechado; somente a proporção de brigas
+(discussões) no trânsito foi maior entre as mulheres.
+Entre os 491 estudantes com antecedentes
+de AT, 65,2% referiram um acidente, 20,8% referiram dois AT e 14%, três ou mais. Entre os
+369 condutores do sexo masculino com história de AT, observa-se que quanto maior a freqüência de AT, maior é o perfil transgressor, exceto no comportamento de avançar sinal fechado que não apresenta diferença estatisticamente significativa (Tabela 3).
+Nos condutores de ambos os sexos as variáveis significativas na análise univariada foram:
+beber e dirigir, acesso a carro da família, antecedente de acidente como acompanhante, ser
+contrário à lei de trânsito mais rigorosa, motorista deve ser agressivo, ter emprego, multa, suborno, idade maior 20, favorável à concessão de
+carteira aos 16 anos de idade, freqüência na direção (habitual), transporte para a universidade (próprio ou da família), renda econômica
+alta, gasto mensal elevado, idade de início na
+direção, ano de ingresso na universidade, tempo de direção. No sexo masculino, as variáveis
+que diferenciam os condutores com história de
+AT e os sem esse antecedente constam na Tabela 4 e são as que permaneceram significativas
+após o controle do confundimento, realizado
+pela análise de Regressão Logística. Além das
+variáveis comportamentais (multas, dirigir pelo acostamento e beber e dirigir) e de exposição ao trânsito (freqüência de direção habitual,
+AT como acompanhante e idade maior ou igual a 20) resultou
+incluída a variável sócio-econômica – renda elevada. Engenharia de Software, a matéria dominada consiste em máquinas de processamento da
+informação configuradas e programadas.
