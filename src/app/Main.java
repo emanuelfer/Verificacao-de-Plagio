@@ -160,14 +160,13 @@ public class Main {
                                 hashPlagio = null;
                                 break;
                             case 2:
-                                AVL_Functions avlTreePlagio;
+                                AVL_Functions avlTreePlagio = new AVL_Functions();;
+                                antesCarregamento = System.currentTimeMillis();
+                                verificador.carregaArquivoTree("Arquivos para verificar/"+nomeArquivo, null, avlTreePlagio, n, 0); //Carrega arquivo na Árvore.
+                                depoisCarregamento = System.currentTimeMillis();
                                 // ---- Verificando arquivo usando AVL
-                                for (int j = 0; j < arquivosBase.size(); j++) {
-                                    avlTreePlagio = new AVL_Functions();
-                                    System.out.println("-------------------------");
-                                    antesCarregamento = System.currentTimeMillis();
-                                    verificador.carregaArquivoTree("Arquivos para verificar/"+nomeArquivo, null, avlTreePlagio, n, 0); //Carrega arquivo na Árvore.
-                                    depoisCarregamento = System.currentTimeMillis();
+                                for (int j = 0; j < arquivosBase.size(); j++) {                                    
+                                    System.out.println("-------------------------");                                    
                                     antesVerificacao = System.currentTimeMillis();
                                     boolean flagAVL = verificador.verificaByTree(arquivosBase.get(j), null, avlTreePlagio, n, 0);
                                     depoisVerificacao = System.currentTimeMillis();
@@ -178,17 +177,17 @@ public class Main {
                                     }
                                     System.out.println("Tempo gasto para carregar arquivo na estrutura: " + (depoisCarregamento - antesCarregamento));
                                     System.out.println("Tempo gasto para verificar plágio usando a estrutura: " + (depoisVerificacao - antesVerificacao));
-                                    avlTreePlagio = null;
+                                    
                                 }
+                                avlTreePlagio = null;
                                 break;
                             case 3:
-                                RedBlackTree rbTree;
+                                RedBlackTree rbTree = new RedBlackTree();
+                                antesCarregamento = System.currentTimeMillis();
+                                verificador.carregaArquivoTree("Arquivos para verificar/"+nomeArquivo, rbTree, null, n, 1); //Carrega arquivo na Árvore.
+                                depoisCarregamento = System.currentTimeMillis();
                                 for (int j = 0; j < arquivosBase.size(); j++) {
-                                    System.out.println("-----------------");
-                                    rbTree = new RedBlackTree();
-                                    antesCarregamento = System.currentTimeMillis();
-                                    verificador.carregaArquivoTree("Arquivos para verificar/"+nomeArquivo, rbTree, null, n, 1); //Carrega arquivo na Árvore.
-                                    depoisCarregamento = System.currentTimeMillis();
+                                    System.out.println("-----------------");                                                                        
                                     antesVerificacao = System.currentTimeMillis();
                                     boolean flag = verificador.verificaByTree(arquivosBase.get(j), rbTree, null, n, 1);
                                     depoisVerificacao = System.currentTimeMillis();
@@ -198,10 +197,9 @@ public class Main {
                                         System.out.println("Não há plágio no arquivo dados" + (j + 1) + ".txt");
                                     }
                                     System.out.println("Tempo gasto para carregar arquivo na estrutura: " + (depoisCarregamento - antesCarregamento));
-                                    System.out.println("Tempo gasto para verificar plágio usando a estrutura: " + (depoisVerificacao - antesVerificacao));
-                                    rbTree = null;
+                                    System.out.println("Tempo gasto para verificar plágio usando a estrutura: " + (depoisVerificacao - antesVerificacao));                                    
                                 }
-
+                                rbTree = null;
                                 break;
                             default:
                                 break;
